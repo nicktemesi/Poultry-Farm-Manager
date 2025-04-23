@@ -1,4 +1,8 @@
 /* General Document styling */
+:root{
+    --card-color: #254441;
+    --button-color: #bb9cd6;
+}
 html{
     font-size: 62.5%;
 }
@@ -44,14 +48,24 @@ a{
 img{
     border-radius: .5em;
 }
+.image_logo{
+    border-radius: 50%;
+}
 /* header styling */
 header{
     display: flex;
     align-items: center;
     justify-content: space-around;
+    /* justify-content: space-between; */
     padding: 10px;
 }
-
+.div_logo{
+    width: 50px;
+}
+nav{
+    position: relative;
+    left: 10em;
+}
 nav ul{
     display: flex;
     align-items: center;
@@ -65,6 +79,7 @@ nav ul li{
 main{
     margin-top: 20px;
 }
+/* landing page */
 /* hero section */
 .intro_div{
     display: flex;
@@ -118,15 +133,17 @@ main{
     /* top: 18em; */
     top: 8em;
 }
-.products_image img, .actual_images img{
-    width: 100%;
+.products_image img, .actual_images img,
+.image_logo, .banner_div img, .single_product_img_div img{
+    /* width: 100%; */
+    max-inline-size: 100%;
     object-fit:cover;
     height: auto;
     display:block;
 }
 .a_view_products{
     padding: .3em 1em;
-    background-color: #bb9cd6;
+    background-color: var(--button-color);
     border-radius: .5em;
     cursor: pointer;
     transition: transform 0.2s ease-in-out;
@@ -161,7 +178,7 @@ main{
     left: 220px; */
     margin-top: 1em;
     box-shadow: 2px -2px 5px #254441, -2px 2px 5px #254441 ;
-    background-color: #254441;
+    background-color: var( --card-color);
     /* align-self: flex-start; */
     /* min-height: 15em; */
     color: rgb(172, 167, 167);
@@ -211,7 +228,7 @@ main{
 .about_us_div_child_adv{
     min-width: 200px;
     min-height: 100px;
-    background-color: #254441;
+    background-color: var(--card-color);
     color: rgb(172, 167, 167);
     box-shadow: 2px -2px 5px #254441;
 }
@@ -260,10 +277,87 @@ main{
     /* justify-content: space-between; */
     gap: 5px;
 }
+
+/* Products page */
+.overal_div{
+    /* max-width: 1200px; */
+}
+.overal_banner_area{
+    position: relative;
+    width: 100%;
+    height: 35vh;
+    overflow: hidden;
+}
+.banner_div{
+    width: 100%;
+    height: 100%;
+}
+.banner_words{
+    position:absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10%;
+    color: rgba(219, 227, 247, 0.91);
+    z-index: 2;
+}
+.view_cart i{
+    max-width: 20em;
+}
+.overal_products_area{
+    margin-top: 1em;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:1.4em;
+    width: 100%;
+}
+.single_product{
+    width: 12em;
+}
+.single_product_price{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1.2rem;
+}
+.product_cta{
+    display: flex;
+    align-items: center;
+    gap: 5em;
+}
+.button_div_extra{
+    padding-top: .1em;
+    font-size: 1.2rem;
+}
+/* purchase page */
+.ordered_items_div{
+    width: 50%;
+    margin: 1em auto;
+}
+.list_child{
+    display: flex;
+    gap: 4em;
+}
 /* footer styling */
 
 
 /* media query */
+@media (min-width: 300px){
+    .overal_products_area{
+        gap:4em;
+    }
+
+}
+@media (min-width: 358px){
+    .single_product{
+        width: 15em;
+    }
+    .overal_banner_area{
+        height: 40vh;
+    }
+
+}
 @media (min-width: 490px){
     .diff_width{
         max-width: 20em;
@@ -339,7 +433,7 @@ main{
         align-self: flex-start; 
        }    
     .intro_div_child_words{
-    width: 100%;
+    width: 90%;
     margin-top: 1.2em;
     }
     .intro_div_child_images{
@@ -350,6 +444,9 @@ main{
     }
     .diff_width{
         max-width: 21em;
+    }
+    .p_style{
+        margin: 0 5em;
     }
 }
 @media(min-width:1056px){

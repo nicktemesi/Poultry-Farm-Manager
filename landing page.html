@@ -13,7 +13,11 @@
 </head>
 <body>
     <header>
-        <h1>Online Poutlry Farm</h1>
+        <div class = "div_logo">
+            <a href="">
+                <img src="images/logo.PNG" alt="" class="image_logo">
+            </a>
+        </div>
         <nav>
             <ul>
                 <li> <a href="">HOME</a></li>
@@ -27,29 +31,44 @@
     <main>
 
         <div class="intro_div">
-            <div class="intro_div_child first">
+            <div class="intro_div_child ">
                 <div class="intro_div_child_center">
                     <h1>JATEM Poultry Farm</h1>
                     <h4>Straight from our farm to your table</h4>
-                    <a href="" class = "a_view_products">View Products👉</a>
+                    <a href="" class = "a_view_products move">View Products👇</a>
                 </div>
-                <img src="images/chicken products.PNG" alt="" class = "products_image">
+                <!-- <a href=""><img src="images/chicken products.PNG" alt="" class = "products_image"></a> -->
+                 <div  class = "products_image">
+                    <a href="">
+                        <img src="images/chicken products.PNG" alt="">
+                    </a>
+                </div>
             </div>
-            <div class="intro_div_child second">
+            <div class="intro_div_child">
                 <div class="intro_div_child_images">
-                    <img src="images/chicken.jpg" alt="">
-                    <img src="images/eggs.jpg" alt="" class = "eggs_images">
-                </div>
-                <div class="intro_div_child_words">
-                        <h4>Fresh, organic and healthy</h4>
-                        <h4>No GMO❌💊</h4>
-                        <a href="" class = "a_view_products">Shop Now</a>
-                </div>   
+                    <div class="chicken_img_container">
+                        <div class = "actual_images">
+                            <img src="images/chicken.jpg" alt="" >
+                        </div>
+                    </div>
+                    <div  class = "tryout">
+                        <!-- <img src="images/eggs.jpg" alt="" class = "eggs_images"> -->
+                         <div class = "actual_images diff_width">
+                            <img src="images/eggs.jpg" alt="" >
+                            <!-- <img src="images/eggs.jpg" alt="" class = "actual_images eggs_images"> -->
+                        </div>
+                        <div class="intro_div_child_words">
+                            <h4>Fresh, organic and healthy</h4>
+                            <h4  class = "spacing">No GMO❌💊</h4>
+                            <a href="" class = "a_view_products">Shop Now</a>
+                        </div> 
+                    </div>
+                </div>            
             </div>
         </div>
 
         <div class="about_us_div">
-            <h6>ABOUT US</h6>
+            <h6 class = "h6_underline">ABOUT US</h6>
             <p class = "p_style"> 
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
                 Possimus vitae cumque accusamus commodi libero laudantium, 
@@ -62,10 +81,14 @@
                     <ol>
                         <li>Lorem ipsum dolor</li>
                         <li>Lorem ipsum dolor</li>
+                        <li>Lorem ipsum dolor</li>
+                        <li>Lorem ipsum dolor</li>
                     </ol>
                 </div>
                 <div class="about_us_div_child_adv">
                     <ol>
+                        <li>Lorem ipsum dolor</li>
+                        <li>Lorem ipsum dolor</li>
                         <li>Lorem ipsum dolor</li>
                         <li>Lorem ipsum dolor</li>
                     </ol>
@@ -77,7 +100,7 @@
         </div>
 
         <div class="contact_div">
-            <h6>CONTACT US</h6>
+            <h6 class = "h6_underline">CONTACT US</h6>
             <h6>Enter your details below and send us a message</h6>
             <div class="contact_div_child">
                 <div class="contact_div_form">
