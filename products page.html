@@ -13,21 +13,33 @@
 </head>
 <body>
     <header>
-        <div class = "div_logo">
-            <a href="">
-                <img src="images/logo.PNG" alt="" class="image_logo">
-            </a>
-        </div>
-        <!-- <nav>
-            <ul>
-                <li> <a href="">HOME</a></li>
-                <li> <a href="">PRODUCTS</a></li>
-                <li> <a href="">ABOUT US</a></li>
-                <li> <a href="">CONTACT</a></li>
-                <li> <a href="">PURCHASES</a></li>
-                <li> <a href="">GET STARTED</a></li>
+        <nav class = "nav">
+            <ul class = "sidebar">
+                <li onclick = hideSidebar()><a><i class="fa-regular fa-circle-xmark"></i></i></a></li>
+                <li><a href="">HOME</a></li>
+                <li><a href="">PRODUCTS</a></li>
+                <li><a href="">ABOUT US</a></li>
+                <li><a href="">CONTACT</a></li>
+                <li><a href="">PURCHASES</a></li>
+                <li><a href="">GET STARTED</a></li>
             </ul>
-        </nav> -->
+            <ul class = "nav-list">
+                <li>
+                    <div class = "div_logo">
+                        <a href="">
+                            <img src="images/logo.PNG" alt="" class="image_logo">
+                        </a>
+                    </div>
+                </li>
+                <li class = "hide_on_mobile"><a href="">HOME</a></li>
+                <li class = "hide_on_mobile"><a href="">PRODUCTS</a></li>
+                <li class = "hide_on_mobile"><a href="">ABOUT US</a></li>
+                <li class = "hide_on_mobile"><a href="">CONTACT</a></li>
+                <li class = "hide_on_mobile"><a href="">PURCHASES</a></li>
+                <li class = "hide_on_mobile"><a href="">GET STARTED</a></li>
+                <li onclick = showSidebar() class = "hide_on_desktop"><a><i class="fa-solid fa-bars"></i></a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
@@ -166,10 +178,60 @@
                         </div>
                     </div>
                 </div>
+                <div class="single_product">
+                    <div class="single_product_img_div">
+                        <img src="images/tray of eggs.jpg" alt="">
+                    </div>
+                    <div class="single_product_price">
+                        <div class="single_product_price_child">Tray of Eggs</div>
+                        <div class="single_product_price_child">450</div>
+                    </div>
+                    <div class="product_desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, velit? Voluptatum voluptates quae obcaecati recusandae veniam consequatur molestias atque debitis!
+                    </div>
+                    <div class="product_cta">
+                        <div class="button_div">
+                            <a href="" class = "a_view_products button_div_extra">Shop Now</a>
+                        </div>
+                        <div class="add_to_cart">
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="single_product">
+                    <div class="single_product_img_div">
+                        <img src="images/tray of eggs.jpg" alt="">
+                    </div>
+                    <div class="single_product_price">
+                        <div class="single_product_price_child">Tray of Eggs</div>
+                        <div class="single_product_price_child">450</div>
+                    </div>
+                    <div class="product_desc">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque, velit? Voluptatum voluptates quae obcaecati recusandae veniam consequatur molestias atque debitis!
+                    </div>
+                    <div class="product_cta">
+                        <div class="button_div">
+                            <a href="" class = "a_view_products button_div_extra">Shop Now</a>
+                        </div>
+                        <div class="add_to_cart">
+                            <i class="fa-solid fa-cart-plus"></i>
+                        </div>
+                    </div>
+                </div>
                 
             </div>
         </div>
     </main>
     <footer></footer>
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector(".sidebar")
+            sidebar.style.display = "flex" 
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector(".sidebar")
+            sidebar.style.display = "none" 
+        }
+    </script>
 </body>
 </html>

@@ -13,61 +13,86 @@
 </head>
 <body>
     <header>
-        <div class = "div_logo">
-            <a href="">
-                <img src="images/logo.PNG" alt="" class="image_logo">
-            </a>
-        </div>
-        <!-- <nav>
-            <ul>
-                <li> <a href="">HOME</a></li>
-                <li> <a href="">PRODUCTS</a></li>
-                <li> <a href="">ABOUT US</a></li>
-                <li> <a href="">CONTACT</a></li>
-                <li> <a href="">PURCHASES</a></li>
-                <li> <a href="">GET STARTED</a></li>
+        <nav class = "nav">
+            <ul class = "sidebar">
+                <li onclick = hideSidebar()><a><i class="fa-regular fa-circle-xmark"></i></i></a></li>
+                <li><a href="">HOME</a></li>
+                <li><a href="">PRODUCTS</a></li>
+                <li><a href="">ABOUT US</a></li>
+                <li><a href="">CONTACT</a></li>
+                <li><a href="">PURCHASES</a></li>
+                <li><a href="">GET STARTED</a></li>
             </ul>
-        </nav> -->
+            <ul class = "nav-list">
+                <li>
+                    <div class = "div_logo">
+                        <a href="">
+                            <img src="images/logo.PNG" alt="" class="image_logo">
+                        </a>
+                    </div>
+                </li>
+                <li class = "hide_on_mobile"><a href="">HOME</a></li>
+                <li class = "hide_on_mobile"><a href="">PRODUCTS</a></li>
+                <li class = "hide_on_mobile"><a href="">ABOUT US</a></li>
+                <li class = "hide_on_mobile"><a href="">CONTACT</a></li>
+                <li class = "hide_on_mobile"><a href="">PURCHASES</a></li>
+                <li class = "hide_on_mobile"><a href="">GET STARTED</a></li>
+                <li onclick = showSidebar() class = "hide_on_desktop"><a><i class="fa-solid fa-bars"></i></a></li>
+            </ul>
+        </nav>
     </header>
 
     <main>
-        <div class="overal_banner_area">
-            <!-- <div class="banner_div">
-                <img src="images/background banner.jpeg" alt="" class="background_banner_img">
-            </div> -->
-            <div class = "banner_words">
-                <h1>JATEM POULTRY</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        <div class="overal_div">
+            <div class="overal_banner_area">
+                <!-- <div class="banner_div">
+                    <img src="images/background banner.jpeg" alt="" class="background_banner_img">
+                </div> -->
+                <div class = "banner_words">
+                    <h1>JATEM POULTRY</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+                </div>
             </div>
-        </div>
 
-        <div class="ordered_items_div">
-            <h4>Your Order</h4>
-            <div class="list">
-                <div class="list_child">
-                    <div>Eggs</div>
-                    <div>- 2  + </div>
-                    <div>900 </div>
+            <div class="ordered_items_div">
+                <h4>Your Order</h4>
+                <div class="list">
+                    <div class="list_child">
+                        <div><p>Eggs</p></div>
+                        <div><p>- 2  + </p></div>
+                        <div><p>900</p> </div>
+                    </div>
+                    <div class="list_child">
+                        <div><p>Eggs</p></div>
+                        <div><p>- 2  + </p></div>
+                        <div><p>900</p> </div>
+                    </div>
+                    <div class="list_child">
+                        <div><p>Eggs</p></div>
+                        <div><p>- 2  + </p></div>
+                        <div><p>900</p> </div>
+                    </div>
+                    <div class="list_child">
+                        <div><p>Eggs</p></div>
+                        <div><p>- 2  + </p></div>
+                        <div><p>900</p> </div>
+                    </div>
+                    
                 </div>
-                <div class="list_child">
-                    <div>Eggs</div>
-                    <div>- 2  + </div>
-                    <div>900 </div>
-                </div>
-                <div class="list_child">
-                    <div>Eggs</div>
-                    <div>- 2  + </div>
-                    <div>900 </div>
-                </div>
-                <div class="list_child">
-                    <div>Eggs</div>
-                    <div>- 2  + </div>
-                    <div>900 </div>
-                </div>
-            </div>
-            <a href="" class = "a_view_products">Check Out</a>
-        </div>       
+                <a href="" class = "a_view_products">Check Out</a>
+            </div>  
+        </div>     
     </main>
     <footer></footer>
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector(".sidebar")
+            sidebar.style.display = "flex" 
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector(".sidebar")
+            sidebar.style.display = "none" 
+        }
+    </script>
 </body>
 </html>
