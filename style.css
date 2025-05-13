@@ -36,6 +36,10 @@ p{
     font-size: 20px;
     line-height: 30px;
 }
+.product_p{
+    font-size: 15px;
+    line-height: 12px;   
+}
 li{
     font-size: 20px;
 }
@@ -57,7 +61,7 @@ header{
     align-items: center;
     justify-content: space-around; */
     /* justify-content: space-between; */
-    padding: 10px;
+    padding: 3em;
 }
 .nav-list{
     display: flex;
@@ -71,18 +75,20 @@ header{
     position: fixed;
     top: 0;
     right: 0;
-    width: 250px;
-    height: 30vh;
+    width: 100%;
+    height: 100vh;
     z-index: 999;
     display: none;
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
     justify-content: flex-start;
     background-color:#fafafa00;
     backdrop-filter: blur(5px);
+    padding: 3em;
 }
-sidebar li{
+.sidebar li{
     width: 100%;
+    margin-top: 1em;
 }
 .hide_on_mobile{
     display: none;
@@ -273,7 +279,7 @@ main{
     /* align-self: flex-start; */
     min-height: 1.5em;
 }
-.contact_div_form form{
+.landing_page_form{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -311,7 +317,7 @@ main{
     background-color: #e3f1f4;
     background-image: url("images/background\ banner\ medium.jpeg");
     background-size: cover;
-    /* object-fit: cover; */
+    /* object-fit: cover; -> for images*/
     background-repeat:no-repeat;
     background-blend-mode: multiply;
 }
@@ -325,8 +331,19 @@ main{
     color: rgb(87 108 160 / 91%);
     z-index: 2;
 }
+.overal_div{
+    position: relative;
+}
+.view_cart{
+    position: absolute;
+    right: 0;
+    top: 8em;
+    z-index: 1;
+}
 .view_cart i{
-    max-width: 20em;
+    font-size: 10rem;
+    color: rgb(87 108 160 / 91%) !important;
+
 }
 .overal_products_area{
     margin-top: 1em;
@@ -345,15 +362,24 @@ main{
     align-items: center;
     justify-content: space-between;
     font-size: 1.2rem;
+    margin-top: 1em;
+}
+.product_desc{
+    margin-top:1em;
 }
 .product_cta{
     display: flex;
     align-items: center;
-    gap: 5em;
+    justify-content: space-between;
+    margin-top: 1em;
+    /* gap: 5em; */
+}
+.add_crt_icon{
+    font-size: 2rem;
 }
 .button_div_extra{
-    padding-top: .1em;
-    font-size: 1.2rem;
+    padding: 0 1em;
+    /* font-size: 1.2rem; */
 }
 /* purchase page */
 .ordered_items_div{
@@ -367,13 +393,73 @@ main{
     display: flex;
     gap: 4em;
 }
+/* inventory page */
+.overal_section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.summary_cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 1.6rem;
+    width: 100%;
+}
+.card{
+    border-radius: 5px;
+    padding: 5px;
+    border: 1px solid black;
+    box-shadow: inset -1px -1px 3px  gray;
+}
+.record_card{
+    border: 2px solid red;
+    padding: 1em;
+    width: 100%;
+    flex: 1;
+}
+.record_card div{
+    margin-top: .3em;
+    margin-bottom: .3em;
+}
+.static_flex{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+.dynamic_flex{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.accordion_button{
+    border: none;
+}
+.accordion_content{
+    display: none;
+}
+.record_div_form{
+    width: 80%;
+    margin: 0 auto;
+    padding: 1em;
+}
+.record_form{
+    font-size: 1.5rem;
+}
+.record_form div{
+margin-top: .5em;
+margin-bottom: .5em;
+}
+
 /* footer styling */
 
 
 /* media query */
 @media (min-width: 300px){
     .overal_products_area{
-        gap:4em;
+        gap:3em;
         width: 97%;
         margin:  1em auto;
     }
@@ -381,10 +467,13 @@ main{
 }
 @media (min-width: 358px){
     .single_product{
-        width: 15em;
+        width: 16em;
     }
     .overal_banner_area{
         height: 40vh;
+    }
+    .sidebar{
+        width: 70%;
     }
 
 }
@@ -397,7 +486,17 @@ main{
     .diff_width{
         max-width: 20em;
     }
-
+    .sidebar{
+        width: 50%;
+    }
+}
+@media (min-width:500px){
+    .dynamic_flex{
+        flex-direction: row;
+    }
+    .record_card{
+        width: 40%;
+    }
 }
 @media (min-width:520px){
     .intro_div_child_words{
@@ -453,12 +552,18 @@ main{
         max-width: 755px;
         margin: auto;
     } 
+    .sidebar{
+        width: 30%;
+    }
+}
+@media (min-width:850px){
     .hide_on_mobile{
         display: flex;
     }
     .hide_on_desktop{
         display: none;
     }
+    
 }
 @media (min-width:1024px){
     .intro_div{
