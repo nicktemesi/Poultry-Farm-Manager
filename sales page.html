@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Poultry Farm</title>
+    <!-- css document for styling -->
+    <link rel="stylesheet" href="style.css">
+    <!-- cdnjs link for fontawesome links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <nav class = "nav">
+            <ul class = "sidebar">
+                <li onclick = hideSidebar()><a><i class="fa-regular fa-circle-xmark"></i></i></a></li>
+                <li><a href="">Inventory</a></li>
+                <li><a href="">Health</a></li>
+                <li><a href="">Finances</a></li>
+                <li><a href="">Orders & Sales</a></li>
+                <li><a href="">Egg Production</a></li>
+            </ul>
+            <ul class = "nav-list">
+                <li>
+                    <div class = "div_logo">
+                        <a href="landing page.html">
+                            <img src="images/logo.PNG" alt="" class="image_logo">
+                        </a>
+                    </div>
+                </li>
+                <li class = "hide_on_mobile"><a href="">Inventory</a></li>
+                <li class = "hide_on_mobile"><a href="">Health</a></li>
+                <li class = "hide_on_mobile"><a href="">Finances</a></li>
+                <li class = "hide_on_mobile"><a href="">Orders & Sales</a></li>
+                <li class = "hide_on_mobile"><a href="">Egg Production</a></li>
+                <li onclick = showSidebar() class = "hide_on_desktop"><a><i class="fa-solid fa-bars"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <div class = "overal_section">
+            <div class = "summary_cards">
+                <div class = "card dynamic_flex">
+                    <div>Total Birds:</div>
+                    <div>2000</div> 
+                </div>
+                <div class = "card dynamic_flex">
+                    <div>Sold:</div>
+                    <div>300</div> 
+                </div>
+                <div class = "card dynamic_flex">
+                    <div>Dead:</div>
+                    <div>30</div> 
+                </div>
+                <div class = "card dynamic_flex">
+                    <div>Total Feeds:</div>
+                    <div>500kg</div> 
+                </div>
+            </div>
+            <div class="overal_records">
+                <h6 class = "h6_underline">Sales Records</h6>
+                <div class="table_div">
+                    <table >
+                        <tr>
+                            <th>Vaccine</th>
+                            <th>Chicken Batch</th>
+                            <th>Date administered</th>
+                            <th>Status</th>
+                        </tr>
+                        <tr>
+                            <td>Vaccine name</td>
+                            <td>CL001</td>
+                            <td>12/03/2025</td>
+                            <td>Done</td>
+                        </tr>
+                        <tr>
+                            <td>Vaccine name</td>
+                            <td>CL001</td>
+                            <td>12/03/2025</td>
+                            <td>Done</td>
+                        </tr>
+                        <tr>
+                            <td>Vaccine name</td>
+                            <td>CL001</td>
+                            <td>12/03/2025</td>
+                            <td>Done</td>
+                        </tr>
+                        <tr>
+                            <td>Vaccine name</td>
+                            <td>CL001</td>
+                            <td>12/03/2025</td>
+                            <td>Done</td>
+                        </tr>
+                        
+                    </table>
+                </div>
+                <div class="accordion">
+                    <button class="accordion_button"><P>Any new order(call orders or physical purchase)?<i class="fa-solid fa-caret-down"></i></P></button>
+                    <div class="accordion_content">
+                        <div class="record_div_form">
+                            <form class = "record_form">
+                                <div class="dynamic_flex inc_gap">
+                                    <div class="static_flex">
+                                        <div><label for="batch_no">Batch No:</label></div>
+                                        <div><input type="text" name="batch_no" id=""></div>
+                                    </div>
+                                    <div class="static_flex">
+                                        <div><label for="breed">Breed:</label></div>
+                                        <div>
+                                            <select name="breed" id="">
+                                                <option value="kienyeji"></option>
+                                                <option value="kienyeji">Kienyeji</option>
+                                                <option value="layers">Layers</option>
+                                                <option value="layers">Broilers</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dynamic_flex inc_gap">
+                                    <div class="static_flex">
+                                        <div><label for="quantity">Quantity:</label></div>
+                                        <div><input type="number" name="quantity" id=""></div>
+                                    </div>
+                                    <div class="static_flex">
+                                        <div><label for="housing_unit">Housing Unit:</label></div>
+                                        <div>
+                                            <select name="housing_unit" id="">
+                                                <option value=""></option>
+                                                <option value="kienyeji">Hse A</option>
+                                                <option value="kienyeji">Hse B</option>
+                                                <option value="kienyeji">Hse C</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dynamic_flex">
+                                    <div class="static_flex">
+                                        <div><label for="age_at_arrival">Age at arrival:</label></div>
+                                        <div>
+                                            <input type="number" name="age_at_arrival" id="">
+                                            <select name="age_suffix" id="">
+                                                <option value="weeks">wk(s)</option>
+                                                <option value="Months">month(s)</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="static_flex">
+                                        <div><label for="date_acquired">Date Acquired:</label></div>
+                                        <div>
+                                            <input type="date" name="date_acquired" id="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dynamic_flex">
+                                    <div class="static_flex">
+                                        <div><label for="health_status">Health:</label></div>
+                                        <div>
+                                            <select name="health_status" id="">
+                                                <option value=""></option>
+                                                <option value="kienyeji"></option>
+                                                <option value="good">Good</option>
+                                                <option value="poor">Poor</option>
+                                                <option value="excellent">Excellent</option>
+
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- submit button -->
+                                <div class="dynamic_flex">
+                                        <div class = centered_flex>
+                                            <input type="submit" value="submit">
+                                        </div>
+                                </div>
+                                
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class = "chart">
+                <canvas id="line_chart" width="300" height="300" ></canvas>
+            </div>
+        </div>
+        
+    </main>
+    <footer></footer>
+    <!-- javascript for displaying sidebar navigation -->
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector(".sidebar")
+            sidebar.style.display = "flex" 
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector(".sidebar")
+            sidebar.style.display = "none" 
+        }
+    </script>
+    <!-- javascript for an accordion -->
+    <script src = "accordion.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src = "line chart.js"></script>
+</body>
+</html>

@@ -60,7 +60,7 @@
                     <div>500kg</div> 
                 </div>
             </div>
-            <div class="overal_chicken_records">
+            <div class="overal_records">
                 <h6 class = "h6_underline">Chicken Records</h6>
                 <div class="record_cards dynamic_flex">
                     <div class="record_card">
@@ -277,7 +277,7 @@
                     <div class="accordion_content">
                         <div class="record_div_form">
                             <form class = "record_form">
-                                <div class="dynamic_flex">
+                                <div class="dynamic_flex inc_gap">
                                     <div class="static_flex">
                                         <div><label for="batch_no">Batch No:</label></div>
                                         <div><input type="text" name="batch_no" id=""></div>
@@ -294,7 +294,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="dynamic_flex">
+                                <div class="dynamic_flex inc_gap">
                                     <div class="static_flex">
                                         <div><label for="quantity">Quantity:</label></div>
                                         <div><input type="number" name="quantity" id=""></div>
@@ -344,12 +344,11 @@
                                         </div>
                                     </div>
                                 </div>
+                                <!-- submit button -->
                                 <div class="dynamic_flex">
-                                    <div class="static_flex ">
-                                        <div>
+                                        <div class = centered_flex>
                                             <input type="submit" value="submit">
                                         </div>
-                                    </div>
                                 </div>
                                 
                             </form>
@@ -357,7 +356,7 @@
                     </div>
                 </div>
             </div>
-            <div class="overal_feeds_records">
+            <div class="overal_records">
                 <h6 class = "h6_underline">Chicken Feeds Records</h6>
                 <div class="record_cards dynamic_flex">
                     <div class="record_card">
@@ -520,21 +519,88 @@
                 <div class="accordion">
                     <button class="accordion_button"><P>Go ahead an input new chicken feeds records<i class="fa-solid fa-caret-down"></i></P></button>
                     <div class="accordion_content">
-                        <div class="contact_div_form">
-                            <form>
-                                <div class = "first_inputs">
-                                    <input type="text" placeholder="Name"  class = "contact_inputs_div">
-                                    <input type="email" placeholder="email address"  class = "contact_inputs_div">
-                                </div><br>
-                                <input type="text" placeholder="subject" class = "contact_inputs"><br>
-                                <input type="text" placeholder="message" class = "contact_inputs"><br>
-                                <input type="submit" placeholder="send" class = "contact_inputs">
+                        <div class="record_div_form">
+                            <form class = "record_form">
+                                <div class="dynamic_flex inc_gap">
+                                    <div class="static_flex">
+                                        <div><label for="batch_no">Batch No:</label></div>
+                                        <div><input type="text" name="batch_no" id=""></div>
+                                    </div>
+                                    <div class="static_flex">
+                                        <div><label for="breed">Breed:</label></div>
+                                        <div>
+                                            <select name="breed" id="">
+                                                <option value="kienyeji"></option>
+                                                <option value="kienyeji">Kienyeji</option>
+                                                <option value="layers">Layers</option>
+                                                <option value="layers">Broilers</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dynamic_flex inc_gap">
+                                    <div class="static_flex">
+                                        <div><label for="quantity">Quantity:</label></div>
+                                        <div><input type="number" name="quantity" id=""></div>
+                                    </div>
+                                    <div class="static_flex">
+                                        <div><label for="housing_unit">Housing Unit:</label></div>
+                                        <div>
+                                            <select name="housing_unit" id="">
+                                                <option value=""></option>
+                                                <option value="kienyeji">Hse A</option>
+                                                <option value="kienyeji">Hse B</option>
+                                                <option value="kienyeji">Hse C</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dynamic_flex">
+                                    <div class="static_flex">
+                                        <div><label for="age_at_arrival">Age at arrival:</label></div>
+                                        <div>
+                                            <input type="number" name="age_at_arrival" id="">
+                                            <select name="age_suffix" id="">
+                                                <option value="weeks">wk(s)</option>
+                                                <option value="Months">month(s)</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="static_flex">
+                                        <div><label for="date_acquired">Date Acquired:</label></div>
+                                        <div>
+                                            <input type="date" name="date_acquired" id="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dynamic_flex">
+                                    <div class="static_flex">
+                                        <div><label for="health_status">Health:</label></div>
+                                        <div>
+                                            <select name="health_status" id="">
+                                                <option value=""></option>
+                                                <option value="kienyeji"></option>
+                                                <option value="good">Good</option>
+                                                <option value="poor">Poor</option>
+                                                <option value="excellent">Excellent</option>
+
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- submit button -->
+                                <div class="dynamic_flex">
+                                        <div class = centered_flex>
+                                            <input type="submit" value="submit">
+                                        </div>
+                                </div>
+                                
                             </form>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="overal_medicine_records">
+            <div class="overal_records">
                 <h6 class = "h6_underline">Medicine Records</h6>
                 <div class="record_cards dynamic_flex">
                     <div class="record_card">
@@ -697,21 +763,88 @@
                 <div class="accordion">
                     <button class="accordion_button"><P>Go ahead an input new medicine records<i class="fa-solid fa-caret-down"></i></P></button>
                     <div class="accordion_content">
-                        <div class="contact_div_form">
-                            <form>
-                                <div class = "first_inputs">
-                                    <input type="text" placeholder="Name"  class = "contact_inputs_div">
-                                    <input type="email" placeholder="email address"  class = "contact_inputs_div">
-                                </div><br>
-                                <input type="text" placeholder="subject" class = "contact_inputs"><br>
-                                <input type="text" placeholder="message" class = "contact_inputs"><br>
-                                <input type="submit" placeholder="send" class = "contact_inputs">
+                        <div class="record_div_form">
+                            <form class = "record_form">
+                                <div class="dynamic_flex inc_gap">
+                                    <div class="static_flex">
+                                        <div><label for="batch_no">Batch No:</label></div>
+                                        <div><input type="text" name="batch_no" id=""></div>
+                                    </div>
+                                    <div class="static_flex">
+                                        <div><label for="breed">Breed:</label></div>
+                                        <div>
+                                            <select name="breed" id="">
+                                                <option value="kienyeji"></option>
+                                                <option value="kienyeji">Kienyeji</option>
+                                                <option value="layers">Layers</option>
+                                                <option value="layers">Broilers</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dynamic_flex inc_gap">
+                                    <div class="static_flex">
+                                        <div><label for="quantity">Quantity:</label></div>
+                                        <div><input type="number" name="quantity" id=""></div>
+                                    </div>
+                                    <div class="static_flex">
+                                        <div><label for="housing_unit">Housing Unit:</label></div>
+                                        <div>
+                                            <select name="housing_unit" id="">
+                                                <option value=""></option>
+                                                <option value="kienyeji">Hse A</option>
+                                                <option value="kienyeji">Hse B</option>
+                                                <option value="kienyeji">Hse C</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dynamic_flex">
+                                    <div class="static_flex">
+                                        <div><label for="age_at_arrival">Age at arrival:</label></div>
+                                        <div>
+                                            <input type="number" name="age_at_arrival" id="">
+                                            <select name="age_suffix" id="">
+                                                <option value="weeks">wk(s)</option>
+                                                <option value="Months">month(s)</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="static_flex">
+                                        <div><label for="date_acquired">Date Acquired:</label></div>
+                                        <div>
+                                            <input type="date" name="date_acquired" id="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dynamic_flex">
+                                    <div class="static_flex">
+                                        <div><label for="health_status">Health:</label></div>
+                                        <div>
+                                            <select name="health_status" id="">
+                                                <option value=""></option>
+                                                <option value="kienyeji"></option>
+                                                <option value="good">Good</option>
+                                                <option value="poor">Poor</option>
+                                                <option value="excellent">Excellent</option>
+
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- submit button -->
+                                <div class="dynamic_flex">
+                                        <div class = centered_flex>
+                                            <input type="submit" value="submit">
+                                        </div>
+                                </div>
+                                
                             </form>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="overal_other_inventory_records">
+            <div class="overal_records">
                 <h6 class = "h6_underline">Others</h6>
                 <div class="record_cards dynamic_flex">
                     <div class="record_card">
@@ -874,15 +1007,82 @@
                 <div class="accordion">
                     <button class="accordion_button"><P>Go ahead an input new records<i class="fa-solid fa-caret-down"></i></P></button>
                     <div class="accordion_content">
-                        <div class="contact_div_form">
-                            <form>
-                                <div class = "first_inputs">
-                                    <input type="text" placeholder="Name"  class = "contact_inputs_div">
-                                    <input type="email" placeholder="email address"  class = "contact_inputs_div">
-                                </div><br>
-                                <input type="text" placeholder="subject" class = "contact_inputs"><br>
-                                <input type="text" placeholder="message" class = "contact_inputs"><br>
-                                <input type="submit" placeholder="send" class = "contact_inputs">
+                        <div class="record_div_form">
+                            <form class = "record_form">
+                                <div class="dynamic_flex inc_gap">
+                                    <div class="static_flex">
+                                        <div><label for="batch_no">Batch No:</label></div>
+                                        <div><input type="text" name="batch_no" id=""></div>
+                                    </div>
+                                    <div class="static_flex">
+                                        <div><label for="breed">Breed:</label></div>
+                                        <div>
+                                            <select name="breed" id="">
+                                                <option value="kienyeji"></option>
+                                                <option value="kienyeji">Kienyeji</option>
+                                                <option value="layers">Layers</option>
+                                                <option value="layers">Broilers</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dynamic_flex inc_gap">
+                                    <div class="static_flex">
+                                        <div><label for="quantity">Quantity:</label></div>
+                                        <div><input type="number" name="quantity" id=""></div>
+                                    </div>
+                                    <div class="static_flex">
+                                        <div><label for="housing_unit">Housing Unit:</label></div>
+                                        <div>
+                                            <select name="housing_unit" id="">
+                                                <option value=""></option>
+                                                <option value="kienyeji">Hse A</option>
+                                                <option value="kienyeji">Hse B</option>
+                                                <option value="kienyeji">Hse C</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dynamic_flex">
+                                    <div class="static_flex">
+                                        <div><label for="age_at_arrival">Age at arrival:</label></div>
+                                        <div>
+                                            <input type="number" name="age_at_arrival" id="">
+                                            <select name="age_suffix" id="">
+                                                <option value="weeks">wk(s)</option>
+                                                <option value="Months">month(s)</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="static_flex">
+                                        <div><label for="date_acquired">Date Acquired:</label></div>
+                                        <div>
+                                            <input type="date" name="date_acquired" id="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dynamic_flex">
+                                    <div class="static_flex">
+                                        <div><label for="health_status">Health:</label></div>
+                                        <div>
+                                            <select name="health_status" id="">
+                                                <option value=""></option>
+                                                <option value="kienyeji"></option>
+                                                <option value="good">Good</option>
+                                                <option value="poor">Poor</option>
+                                                <option value="excellent">Excellent</option>
+
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- submit button -->
+                                <div class="dynamic_flex">
+                                        <div class = centered_flex>
+                                            <input type="submit" value="submit">
+                                        </div>
+                                </div>
+                                
                             </form>
                         </div>
                     </div>
@@ -1051,15 +1251,82 @@
                 <div class="accordion">
                     <button class="accordion_button"><P>Go ahead an input new supplier details<i class="fa-solid fa-caret-down"></i></P></button>
                     <div class="accordion_content">
-                        <div class="contact_div_form">
-                            <form>
-                                <div class = "first_inputs">
-                                    <input type="text" placeholder="Name"  class = "contact_inputs_div">
-                                    <input type="email" placeholder="email address"  class = "contact_inputs_div">
-                                </div><br>
-                                <input type="text" placeholder="subject" class = "contact_inputs"><br>
-                                <input type="text" placeholder="message" class = "contact_inputs"><br>
-                                <input type="submit" placeholder="send" class = "contact_inputs">
+                        <div class="record_div_form">
+                            <form class = "record_form">
+                                <div class="dynamic_flex inc_gap">
+                                    <div class="static_flex">
+                                        <div><label for="batch_no">Batch No:</label></div>
+                                        <div><input type="text" name="batch_no" id=""></div>
+                                    </div>
+                                    <div class="static_flex">
+                                        <div><label for="breed">Breed:</label></div>
+                                        <div>
+                                            <select name="breed" id="">
+                                                <option value="kienyeji"></option>
+                                                <option value="kienyeji">Kienyeji</option>
+                                                <option value="layers">Layers</option>
+                                                <option value="layers">Broilers</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dynamic_flex inc_gap">
+                                    <div class="static_flex">
+                                        <div><label for="quantity">Quantity:</label></div>
+                                        <div><input type="number" name="quantity" id=""></div>
+                                    </div>
+                                    <div class="static_flex">
+                                        <div><label for="housing_unit">Housing Unit:</label></div>
+                                        <div>
+                                            <select name="housing_unit" id="">
+                                                <option value=""></option>
+                                                <option value="kienyeji">Hse A</option>
+                                                <option value="kienyeji">Hse B</option>
+                                                <option value="kienyeji">Hse C</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dynamic_flex">
+                                    <div class="static_flex">
+                                        <div><label for="age_at_arrival">Age at arrival:</label></div>
+                                        <div>
+                                            <input type="number" name="age_at_arrival" id="">
+                                            <select name="age_suffix" id="">
+                                                <option value="weeks">wk(s)</option>
+                                                <option value="Months">month(s)</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="static_flex">
+                                        <div><label for="date_acquired">Date Acquired:</label></div>
+                                        <div>
+                                            <input type="date" name="date_acquired" id="">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="dynamic_flex">
+                                    <div class="static_flex">
+                                        <div><label for="health_status">Health:</label></div>
+                                        <div>
+                                            <select name="health_status" id="">
+                                                <option value=""></option>
+                                                <option value="kienyeji"></option>
+                                                <option value="good">Good</option>
+                                                <option value="poor">Poor</option>
+                                                <option value="excellent">Excellent</option>
+
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- submit button -->
+                                <div class="dynamic_flex">
+                                        <div class = centered_flex>
+                                            <input type="submit" value="submit">
+                                        </div>
+                                </div>
+                                
                             </form>
                         </div>
                     </div>
