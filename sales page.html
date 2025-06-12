@@ -13,14 +13,16 @@
 </head>
 <body>
     <header>
-        <nav class = "nav">
+         <nav class = "nav">
             <ul class = "sidebar">
                 <li onclick = hideSidebar()><a><i class="fa-regular fa-circle-xmark"></i></i></a></li>
+                <li><a href="">Analytics</a></li>
                 <li><a href="">Inventory</a></li>
                 <li><a href="">Health</a></li>
                 <li><a href="">Finances</a></li>
                 <li><a href="">Orders & Sales</a></li>
                 <li><a href="">Egg Production</a></li>
+                <li><a href="">Sold Products</a></li>
             </ul>
             <ul class = "nav-list">
                 <li>
@@ -30,11 +32,13 @@
                         </a>
                     </div>
                 </li>
+                <li class = "hide_on_mobile"><a href="">Analytics</a></li>
                 <li class = "hide_on_mobile"><a href="">Inventory</a></li>
                 <li class = "hide_on_mobile"><a href="">Health</a></li>
                 <li class = "hide_on_mobile"><a href="">Finances</a></li>
                 <li class = "hide_on_mobile"><a href="">Orders & Sales</a></li>
                 <li class = "hide_on_mobile"><a href="">Egg Production</a></li>
+                <li class = "hide_on_mobile"><a href="">Sold Products</a></li>
                 <li onclick = showSidebar() class = "hide_on_desktop"><a><i class="fa-solid fa-bars"></i></a></li>
             </ul>
         </nav>
@@ -44,57 +48,62 @@
         <div class = "overal_section">
             <div class = "summary_cards">
                 <div class = "card dynamic_flex">
-                    <div>Total Birds:</div>
-                    <div>2000</div> 
+                    <div>Total Sales:</div>
+                    <div>200000</div> 
                 </div>
                 <div class = "card dynamic_flex">
-                    <div>Sold:</div>
-                    <div>300</div> 
+                    <div>Outstanding Balance:</div>
+                    <div>45000</div> 
                 </div>
                 <div class = "card dynamic_flex">
-                    <div>Dead:</div>
-                    <div>30</div> 
-                </div>
-                <div class = "card dynamic_flex">
-                    <div>Total Feeds:</div>
-                    <div>500kg</div> 
+                    <div>Most Sales:</div>
+                    <div>Eggs(120000)</div> 
                 </div>
             </div>
             <div class="overal_records">
-                <h6 class = "h6_underline">Sales Records</h6>
+                <h6 class = "h6_underline full_width">Sales Records</h6>
                 <div class="table_div">
-                    <table >
+                    <table class = "styled_table">
                         <tr>
-                            <th>Vaccine</th>
-                            <th>Chicken Batch</th>
-                            <th>Date administered</th>
-                            <th>Status</th>
+                            <th>Date</th>
+                            <th>Customer</th>
+                            <th>Product</th>
+                            <th>Quantity</th>
+                            <th>Total</th>
+                            <th>Paid</th>
+                            <th>Balance</th>
+                            <th>action</th>
                         </tr>
                         <tr>
-                            <td>Vaccine name</td>
-                            <td>CL001</td>
-                            <td>12/03/2025</td>
-                            <td>Done</td>
+                            <td>21/4/2025</td>
+                            <td>Nick Temesi</td>
+                            <td>eggs</td>
+                            <td>3 trays</td>
+                            <td>2000</td>
+                            <td>1000</td>
+                            <td>1000</td>
+                            <td>...</td>
                         </tr>
                         <tr>
-                            <td>Vaccine name</td>
-                            <td>CL001</td>
-                            <td>12/03/2025</td>
-                            <td>Done</td>
+                            <td>21/4/2025</td>
+                            <td>Nick Temesi</td>
+                            <td>eggs</td>
+                            <td>3 trays</td>
+                            <td>2000</td>
+                            <td>1000</td>
+                            <td>1000</td>
+                            <td>...</td>
                         </tr>
                         <tr>
-                            <td>Vaccine name</td>
-                            <td>CL001</td>
-                            <td>12/03/2025</td>
-                            <td>Done</td>
+                            <td>21/4/2025</td>
+                            <td>Nick Temesi</td>
+                            <td>eggs</td>
+                            <td>3 trays</td>
+                            <td>2000</td>
+                            <td>1000</td>
+                            <td>1000</td>
+                            <td>...</td>
                         </tr>
-                        <tr>
-                            <td>Vaccine name</td>
-                            <td>CL001</td>
-                            <td>12/03/2025</td>
-                            <td>Done</td>
-                        </tr>
-                        
                     </table>
                 </div>
                 <div class="accordion">
@@ -104,67 +113,82 @@
                             <form class = "record_form">
                                 <div class="dynamic_flex inc_gap">
                                     <div class="static_flex">
-                                        <div><label for="batch_no">Batch No:</label></div>
-                                        <div><input type="text" name="batch_no" id=""></div>
+                                        <div><label for="customer_name">Customer name:</label></div>
+                                        <div><input type="text" name="customer_name" id=""></div>
                                     </div>
                                     <div class="static_flex">
-                                        <div><label for="breed">Breed:</label></div>
+                                        <div><label for="date_of_sale">Date of Sale:</label></div>
+                                        <div><input type="date" name="date_of_sale" id=""></div>
+                                    </div>
+                                </div>
+                                <div class="dynamic_flex inc_gap">
+                                    <div class="static_flex">
+                                        <div><label for="phone_number">Phone number:</label></div>
+                                        <div><input type="text" name="phone_number" id=""></div>
+                                    </div>
+                                    <div class="static_flex">
+                                        <div><label for="email_address">Email address:</label></div>
+                                        <div><input type="text" name="email_address" id=""></div>
+                                    </div>
+                                </div>
+                                <div class="dynamic_flex inc_gap">
+                                    <div class="static_flex">
+                                        <div><label for="product_bought">Product bought:</label></div>
                                         <div>
-                                            <select name="breed" id="">
-                                                <option value="kienyeji"></option>
-                                                <option value="kienyeji">Kienyeji</option>
-                                                <option value="layers">Layers</option>
-                                                <option value="layers">Broilers</option>
+                                            <select name="product_bought" id="">
+                                                <option value=""></option>
+                                                <option value="product_bought">Eggs</option>
+                                                <option value="product_bought">Broiler</option>
+                                                <option value="product_bought">Layers</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="static_flex">
+                                        <div><label for="quantity">Quantity:</label></div>
+                                        <div><input type="number" name="quantity" id=""></div>
+                                    </div>
+                                </div>
+                                <div class="dynamic_flex inc_gap">
+                                    <div class="static_flex">
+                                        <div><label for="unit_price">Unit Price:</label></div>
+                                        <div><input type="text" name="unit_price" id=""></div>
+                                    </div>
+                                    <div class="static_flex">
+                                        <div><label for="total_price">Total:</label></div>
+                                        <div><input type="number" name="total_price" id=""></div>
+                                    </div>
+                                </div>
+                                <div class="dynamic_flex inc_gap">
+                                    <div class="static_flex">
+                                        <div><label for="payment_method">Payment Method:</label></div>
+                                        <div>
+                                            <select name="payment_method" id="">
+                                                <option value=""></option>
+                                                <option value="payment_method">Mpesa</option>
+                                                <option value="payment_method">Bank Account</option>
+                                                <option value="payment_method">Cash</option>
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="static_flex">
+                                        <div><label for="delivery_option"> Delivery Option:</label></div>
+                                        <div>
+                                            <select name="delivery_option" id="">
+                                                <option value=""></option>
+                                                <option value="delivery_option">Delivery</option>
+                                                <option value="delivery_option">Pick up</option>
                                             </select>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="dynamic_flex inc_gap">
                                     <div class="static_flex">
-                                        <div><label for="quantity">Quantity:</label></div>
-                                        <div><input type="number" name="quantity" id=""></div>
-                                    </div>
-                                    <div class="static_flex">
-                                        <div><label for="housing_unit">Housing Unit:</label></div>
+                                        <div><label for="payment_status">Payment Status:</label></div>
                                         <div>
-                                            <select name="housing_unit" id="">
+                                            <select name="payment_status" id="">
                                                 <option value=""></option>
-                                                <option value="kienyeji">Hse A</option>
-                                                <option value="kienyeji">Hse B</option>
-                                                <option value="kienyeji">Hse C</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="dynamic_flex">
-                                    <div class="static_flex">
-                                        <div><label for="age_at_arrival">Age at arrival:</label></div>
-                                        <div>
-                                            <input type="number" name="age_at_arrival" id="">
-                                            <select name="age_suffix" id="">
-                                                <option value="weeks">wk(s)</option>
-                                                <option value="Months">month(s)</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="static_flex">
-                                        <div><label for="date_acquired">Date Acquired:</label></div>
-                                        <div>
-                                            <input type="date" name="date_acquired" id="">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="dynamic_flex">
-                                    <div class="static_flex">
-                                        <div><label for="health_status">Health:</label></div>
-                                        <div>
-                                            <select name="health_status" id="">
-                                                <option value=""></option>
-                                                <option value="kienyeji"></option>
-                                                <option value="good">Good</option>
-                                                <option value="poor">Poor</option>
-                                                <option value="excellent">Excellent</option>
-
+                                                <option value="payment_status">Half paid</option>
+                                                <option value="payment_status">Fully paid</option>
                                             </select>
                                         </div>
                                     </div>

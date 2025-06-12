@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Poultry Farm</title>
+    <!-- css document for styling -->
+    <link rel="stylesheet" href="style.css">
+    <!-- cdnjs link for fontawesome links -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header>
+        <nav class = "nav">
+            <ul class = "sidebar">
+                <li onclick = hideSidebar()><a><i class="fa-regular fa-circle-xmark"></i></i></a></li>
+                <li><a href="">Analytics</a></li>
+                <li><a href="">Inventory</a></li>
+                <li><a href="">Health</a></li>
+                <li><a href="">Finances</a></li>
+                <li><a href="">Orders & Sales</a></li>
+                <li><a href="">Egg Production</a></li>
+                <li><a href="">Sold Products</a></li>
+            </ul>
+            <ul class = "nav-list">
+                <li>
+                    <div class = "div_logo">
+                        <a href="landing page.html">
+                            <img src="images/logo.PNG" alt="" class="image_logo">
+                        </a>
+                    </div>
+                </li>
+                <li class = "hide_on_mobile"><a href="">Analytics</a></li>
+                <li class = "hide_on_mobile"><a href="">Inventory</a></li>
+                <li class = "hide_on_mobile"><a href="">Health</a></li>
+                <li class = "hide_on_mobile"><a href="">Finances</a></li>
+                <li class = "hide_on_mobile"><a href="">Orders & Sales</a></li>
+                <li class = "hide_on_mobile"><a href="">Egg Production</a></li>
+                <li class = "hide_on_mobile"><a href="">Sold Products</a></li>
+                <li onclick = showSidebar() class = "hide_on_desktop"><a><i class="fa-solid fa-bars"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <div class = "overal_section">
+            <h6 class = "h6_underline full_width">Overview</h6>
+            <div class="dynamic_flex">
+                <div class="overview_card static_flex">
+                    <div class="ov_icon"><i class="fa-solid fa-kiwi-bird"></i></div>
+                    <div class="ov_data">
+                        <div><p>Total chicken</p></div>
+                        <div><p>1200</p></div>
+                    </div>
+                </div>
+                <div class="overview_card static_flex">
+                    <div class="ov_icon"><i class="fa-solid fa-kiwi-bird"></i></div>
+                    <div class="ov_data">
+                        <div><p>Eggs Collected(weekly)</p></div>
+                        <div><p>10000</p></div>
+                    </div>
+                </div>
+                <div class="overview_card static_flex">
+                    <div class="ov_icon"><i class="fa-solid fa-kiwi-bird"></i></div>
+                    <div class="ov_data">
+                        <div><p>Total chicken</p></div>
+                        <div><p>1200</p></div>
+                    </div>
+                </div>
+                <div class="overview_card static_flex">
+                    <div class="ov_icon"><i class="fa-solid fa-kiwi-bird"></i></div>
+                    <div class="ov_data">
+                        <div><p>Total chicken</p></div>
+                        <div><p>1200</p></div>
+                    </div>
+                </div>
+            </div>
+            <div class="dynamic_flex">
+                <div class = "bar_graph">
+                    <h6 class = "h6_underline">Egg Production</h6>
+                    <canvas id="bar_chart" width="300" height="300" ></canvas>
+                </div>
+                <div class = "chart">
+                    <h6 class = "h6_underline">Feed Consumption</h6>
+                    <canvas id="feed_consumption_line_chart" width="300" height="300" ></canvas>
+                </div>
+                <div class = "chart">
+                    <h6 class = "h6_underline">Sales Summary</h6>
+                    <canvas id="pie_chart" width="300" height="300" ></canvas>
+                </div>
+            </div>
+            <div class="notifications full_width">
+                <h6 class = "h6_underline">Notifications</h6>
+                <p>Low feed stock</p>
+                <p>Vaccination due tomorrow</p>
+            </div>
+                      
+        </div>
+
+    </main>
+    <footer></footer>
+    <!-- javascript for displaying sidebar navigation -->
+    <script>
+        function showSidebar(){
+            const sidebar = document.querySelector(".sidebar")
+            sidebar.style.display = "flex" 
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector(".sidebar")
+            sidebar.style.display = "none" 
+        }
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src = "bar chart.js"></script>
+    <script src = "feed consumption line chart.js"></script>
+    <script src = "pie chart.js"></script>
+</body>
+</html>

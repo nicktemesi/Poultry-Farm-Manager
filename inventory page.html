@@ -16,11 +16,13 @@
         <nav class = "nav">
             <ul class = "sidebar">
                 <li onclick = hideSidebar()><a><i class="fa-regular fa-circle-xmark"></i></i></a></li>
+                <li><a href="">Analytics</a></li>
                 <li><a href="">Inventory</a></li>
                 <li><a href="">Health</a></li>
                 <li><a href="">Finances</a></li>
                 <li><a href="">Orders & Sales</a></li>
                 <li><a href="">Egg Production</a></li>
+                <li><a href="">Sold Products</a></li>
             </ul>
             <ul class = "nav-list">
                 <li>
@@ -30,11 +32,13 @@
                         </a>
                     </div>
                 </li>
+                <li class = "hide_on_mobile"><a href="">Analytics</a></li>
                 <li class = "hide_on_mobile"><a href="">Inventory</a></li>
                 <li class = "hide_on_mobile"><a href="">Health</a></li>
                 <li class = "hide_on_mobile"><a href="">Finances</a></li>
                 <li class = "hide_on_mobile"><a href="">Orders & Sales</a></li>
                 <li class = "hide_on_mobile"><a href="">Egg Production</a></li>
+                <li class = "hide_on_mobile"><a href="">Sold Products</a></li>
                 <li onclick = showSidebar() class = "hide_on_desktop"><a><i class="fa-solid fa-bars"></i></a></li>
             </ul>
         </nav>
@@ -61,7 +65,7 @@
                 </div>
             </div>
             <div class="overal_records">
-                <h6 class = "h6_underline">Chicken Records</h6>
+                <h6 class = "h6_underline full_width">Chicken Records</h6>
                 <div class="record_cards dynamic_flex">
                     <div class="record_card">
                         <div class="dynamic_flex">
@@ -271,7 +275,7 @@
                             </div>
                         </div>
                     </div>
-                </div>
+                </div> 
                 <div class="accordion">
                     <button class="accordion_button"><P>Go ahead and input new chicken records<i class="fa-solid fa-caret-down"></i></P></button>
                     <div class="accordion_content">
@@ -357,161 +361,71 @@
                 </div>
             </div>
             <div class="overal_records">
-                <h6 class = "h6_underline">Chicken Feeds Records</h6>
+                <h6 class = "h6_underline full_width ">Chicken Feeds Records</h6>
                 <div class="record_cards dynamic_flex">
                     <div class="record_card">
                         <div class="dynamic_flex">
                             <div class="static_flex">
-                                <div><p class = product_p>Batch No:</p></div>
-                                <div><p class = product_p>CL001</p></div>
-                            </div>
-                            <div class="static_flex">
-                                <div><p class = product_p>Breed:</p></div>
-                                <div><p class = product_p>Layers</p></div>
-                            </div>
-                        </div>
-                        <div class="dynamic_flex">
-                            <div class="static_flex">
-                                <div><p class = product_p>Housing Unit:</p></div>
-                                <div><p class = product_p>A</p></div>
-                            </div>
-                            <div class="static_flex">
-                                <div><p class = product_p>Quantity:</p></div>
-                                <div><p class = product_p>300</p></div>
-                            </div>
-                        </div>
-                        <div class="dynamic_flex">
-                            <div class="static_flex">
-                                <div><p class = product_p>Date acquired:</p></div>
+                                <div><p class = product_p>Date added:</p></div>
                                 <div><p class = product_p>4/08/2025</p></div>
                             </div>
                             <div class="static_flex">
-                                <div><p class = product_p>Age on arrival:</p></div>
-                                <div><p class = product_p>2 weeks</p></div>
+                                <div><p class = product_p>Quantity:</p></div>
+                                <div><p class = product_p>300kg</p></div>
                             </div>
                         </div>
                         <div class="dynamic_flex">
                             <div class="static_flex">
-                                <div><p class = product_p>Remaining:</p></div>
-                                <div><p class = product_p>300</p></div>
+                                <div><p class = product_p>Feed type:</p></div>
+                                <div><p class = product_p>Layers Mash</p></div>
                             </div>
                             <div class="static_flex">
-                                <div><p class = product_p>Current Age:</p></div>
-                                <div><p class = product_p>4 months</p></div>
-                            </div>
-                        </div>
-                        <div class="dynamic_flex">
-                            <div class="static_flex">
-                                <div><p class = product_p>Health Status:</p></div>
-                                <div><p class = product_p>Healthy</p></div>
-                            </div>
-                            <div class="static_flex">
-                                <div><p class = product_p>Status:</p></div>
-                                <div><p class = product_p>Ready to lay eggs</p></div>
+                                <div><p class = product_p>Alert Threshold:</p></div>
+                                <div><p class = product_p>30kg</p></div>
                             </div>
                         </div>
                     </div>
                     <div class="record_card">
                         <div class="dynamic_flex">
                             <div class="static_flex">
-                                <div><p class = product_p>Batch No:</p></div>
-                                <div><p class = product_p>CL001</p></div>
-                            </div>
-                            <div class="static_flex">
-                                <div><p class = product_p>Breed:</p></div>
-                                <div><p class = product_p>Layers</p></div>
-                            </div>
-                        </div>
-                        <div class="dynamic_flex">
-                            <div class="static_flex">
-                                <div><p class = product_p>Housing Unit:</p></div>
-                                <div><p class = product_p>A</p></div>
-                            </div>
-                            <div class="static_flex">
-                                <div><p class = product_p>Quantity:</p></div>
-                                <div><p class = product_p>300</p></div>
-                            </div>
-                        </div>
-                        <div class="dynamic_flex">
-                            <div class="static_flex">
-                                <div><p class = product_p>Date acquired:</p></div>
+                                <div><p class = product_p>Date added:</p></div>
                                 <div><p class = product_p>4/08/2025</p></div>
                             </div>
                             <div class="static_flex">
-                                <div><p class = product_p>Age on arrival:</p></div>
-                                <div><p class = product_p>2 weeks</p></div>
+                                <div><p class = product_p>Quantity:</p></div>
+                                <div><p class = product_p>300kg</p></div>
                             </div>
                         </div>
                         <div class="dynamic_flex">
                             <div class="static_flex">
-                                <div><p class = product_p>Remaining:</p></div>
-                                <div><p class = product_p>300</p></div>
+                                <div><p class = product_p>Feed type:</p></div>
+                                <div><p class = product_p>Layers Mash</p></div>
                             </div>
                             <div class="static_flex">
-                                <div><p class = product_p>Current Age:</p></div>
-                                <div><p class = product_p>4 months</p></div>
-                            </div>
-                        </div>
-                        <div class="dynamic_flex">
-                            <div class="static_flex">
-                                <div><p class = product_p>Health Status:</p></div>
-                                <div><p class = product_p>Healthy</p></div>
-                            </div>
-                            <div class="static_flex">
-                                <div><p class = product_p>Status:</p></div>
-                                <div><p class = product_p>Ready to lay eggs</p></div>
+                                <div><p class = product_p>Alert Threshold:</p></div>
+                                <div><p class = product_p>30kg</p></div>
                             </div>
                         </div>
                     </div>
                     <div class="record_card">
                         <div class="dynamic_flex">
                             <div class="static_flex">
-                                <div><p class = product_p>Batch No:</p></div>
-                                <div><p class = product_p>CL001</p></div>
-                            </div>
-                            <div class="static_flex">
-                                <div><p class = product_p>Breed:</p></div>
-                                <div><p class = product_p>Layers</p></div>
-                            </div>
-                        </div>
-                        <div class="dynamic_flex">
-                            <div class="static_flex">
-                                <div><p class = product_p>Housing Unit:</p></div>
-                                <div><p class = product_p>A</p></div>
-                            </div>
-                            <div class="static_flex">
-                                <div><p class = product_p>Quantity:</p></div>
-                                <div><p class = product_p>300</p></div>
-                            </div>
-                        </div>
-                        <div class="dynamic_flex">
-                            <div class="static_flex">
-                                <div><p class = product_p>Date acquired:</p></div>
+                                <div><p class = product_p>Date added:</p></div>
                                 <div><p class = product_p>4/08/2025</p></div>
                             </div>
                             <div class="static_flex">
-                                <div><p class = product_p>Age on arrival:</p></div>
-                                <div><p class = product_p>2 weeks</p></div>
+                                <div><p class = product_p>Quantity:</p></div>
+                                <div><p class = product_p>300kg</p></div>
                             </div>
                         </div>
                         <div class="dynamic_flex">
                             <div class="static_flex">
-                                <div><p class = product_p>Remaining:</p></div>
-                                <div><p class = product_p>300</p></div>
+                                <div><p class = product_p>Feed type:</p></div>
+                                <div><p class = product_p>Layers Mash</p></div>
                             </div>
                             <div class="static_flex">
-                                <div><p class = product_p>Current Age:</p></div>
-                                <div><p class = product_p>4 months</p></div>
-                            </div>
-                        </div>
-                        <div class="dynamic_flex">
-                            <div class="static_flex">
-                                <div><p class = product_p>Health Status:</p></div>
-                                <div><p class = product_p>Healthy</p></div>
-                            </div>
-                            <div class="static_flex">
-                                <div><p class = product_p>Status:</p></div>
-                                <div><p class = product_p>Ready to lay eggs</p></div>
+                                <div><p class = product_p>Alert Threshold:</p></div>
+                                <div><p class = product_p>30kg</p></div>
                             </div>
                         </div>
                     </div>
@@ -523,17 +437,19 @@
                             <form class = "record_form">
                                 <div class="dynamic_flex inc_gap">
                                     <div class="static_flex">
-                                        <div><label for="batch_no">Batch No:</label></div>
-                                        <div><input type="text" name="batch_no" id=""></div>
+                                        <div><label for="date_added">Date Added:</label></div>
+                                        <div>
+                                            <input type="date" name="date_added" id="">
+                                        </div>
                                     </div>
                                     <div class="static_flex">
-                                        <div><label for="breed">Breed:</label></div>
+                                        <div><label for="feed_type">Feed type:</label></div>
                                         <div>
-                                            <select name="breed" id="">
-                                                <option value="kienyeji"></option>
-                                                <option value="kienyeji">Kienyeji</option>
-                                                <option value="layers">Layers</option>
-                                                <option value="layers">Broilers</option>
+                                            <select name="feed_type" id="">
+                                                <option value="feed_type"></option>
+                                                <option value="feed_type">Grower Mash</option>
+                                                <option value="feed_type">Layers Mash</option>
+                                                <option value="feed_type">Chick Mash</option>
                                             </select>
                                         </div>
                                     </div>
@@ -544,48 +460,8 @@
                                         <div><input type="number" name="quantity" id=""></div>
                                     </div>
                                     <div class="static_flex">
-                                        <div><label for="housing_unit">Housing Unit:</label></div>
-                                        <div>
-                                            <select name="housing_unit" id="">
-                                                <option value=""></option>
-                                                <option value="kienyeji">Hse A</option>
-                                                <option value="kienyeji">Hse B</option>
-                                                <option value="kienyeji">Hse C</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="dynamic_flex">
-                                    <div class="static_flex">
-                                        <div><label for="age_at_arrival">Age at arrival:</label></div>
-                                        <div>
-                                            <input type="number" name="age_at_arrival" id="">
-                                            <select name="age_suffix" id="">
-                                                <option value="weeks">wk(s)</option>
-                                                <option value="Months">month(s)</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="static_flex">
-                                        <div><label for="date_acquired">Date Acquired:</label></div>
-                                        <div>
-                                            <input type="date" name="date_acquired" id="">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="dynamic_flex">
-                                    <div class="static_flex">
-                                        <div><label for="health_status">Health:</label></div>
-                                        <div>
-                                            <select name="health_status" id="">
-                                                <option value=""></option>
-                                                <option value="kienyeji"></option>
-                                                <option value="good">Good</option>
-                                                <option value="poor">Poor</option>
-                                                <option value="excellent">Excellent</option>
-
-                                            </select>
-                                        </div>
+                                        <div><label for="alert_threshold">Alert Threshold:</label></div>
+                                        <div><input type="number" name="alert_threshold" id=""></div>
                                     </div>
                                 </div>
                                 <!-- submit button -->
@@ -601,161 +477,101 @@
                 </div>
             </div>
             <div class="overal_records">
-                <h6 class = "h6_underline">Medicine Records</h6>
+                <h6 class = "h6_underline full_width">Medicine Records</h6>
                 <div class="record_cards dynamic_flex">
                     <div class="record_card">
                         <div class="dynamic_flex">
                             <div class="static_flex">
-                                <div><p class = product_p>Batch No:</p></div>
-                                <div><p class = product_p>CL001</p></div>
+                                <div><p class = product_p>Medicine Name:</p></div>
+                                <div><p class = product_p>Amprolium</p></div>
                             </div>
+                            <div class="static_flex">
+                                <div><p class = product_p>Type:</p></div>
+                                <div><p class = product_p>Antibiotic</p></div>
+                            </div>
+                        </div>
+                        <div class="dynamic_flex">
                             <div class="static_flex">
                                 <div><p class = product_p>Breed:</p></div>
                                 <div><p class = product_p>Layers</p></div>
                             </div>
-                        </div>
-                        <div class="dynamic_flex">
-                            <div class="static_flex">
-                                <div><p class = product_p>Housing Unit:</p></div>
-                                <div><p class = product_p>A</p></div>
-                            </div>
                             <div class="static_flex">
                                 <div><p class = product_p>Quantity:</p></div>
-                                <div><p class = product_p>300</p></div>
+                                <div><p class = product_p>3 bottles</p></div>
                             </div>
                         </div>
                         <div class="dynamic_flex">
                             <div class="static_flex">
-                                <div><p class = product_p>Date acquired:</p></div>
-                                <div><p class = product_p>4/08/2025</p></div>
+                                <div><p class = product_p>Date bought:</p></div>
+                                <div><p class = product_p>4/05/2025</p></div>
                             </div>
                             <div class="static_flex">
-                                <div><p class = product_p>Age on arrival:</p></div>
-                                <div><p class = product_p>2 weeks</p></div>
-                            </div>
-                        </div>
-                        <div class="dynamic_flex">
-                            <div class="static_flex">
-                                <div><p class = product_p>Remaining:</p></div>
-                                <div><p class = product_p>300</p></div>
-                            </div>
-                            <div class="static_flex">
-                                <div><p class = product_p>Current Age:</p></div>
-                                <div><p class = product_p>4 months</p></div>
-                            </div>
-                        </div>
-                        <div class="dynamic_flex">
-                            <div class="static_flex">
-                                <div><p class = product_p>Health Status:</p></div>
-                                <div><p class = product_p>Healthy</p></div>
-                            </div>
-                            <div class="static_flex">
-                                <div><p class = product_p>Status:</p></div>
-                                <div><p class = product_p>Ready to lay eggs</p></div>
+                                <div><p class = product_p>Expiry Date:</p></div>
+                                <div><p class = product_p>15/08/2025</p></div>
                             </div>
                         </div>
                     </div>
                     <div class="record_card">
                         <div class="dynamic_flex">
                             <div class="static_flex">
-                                <div><p class = product_p>Batch No:</p></div>
-                                <div><p class = product_p>CL001</p></div>
+                                <div><p class = product_p>Medicine Name:</p></div>
+                                <div><p class = product_p>Amprolium</p></div>
                             </div>
+                            <div class="static_flex">
+                                <div><p class = product_p>Type:</p></div>
+                                <div><p class = product_p>Antibiotic</p></div>
+                            </div>
+                        </div>
+                        <div class="dynamic_flex">
                             <div class="static_flex">
                                 <div><p class = product_p>Breed:</p></div>
                                 <div><p class = product_p>Layers</p></div>
                             </div>
-                        </div>
-                        <div class="dynamic_flex">
-                            <div class="static_flex">
-                                <div><p class = product_p>Housing Unit:</p></div>
-                                <div><p class = product_p>A</p></div>
-                            </div>
                             <div class="static_flex">
                                 <div><p class = product_p>Quantity:</p></div>
-                                <div><p class = product_p>300</p></div>
+                                <div><p class = product_p>3 bottles</p></div>
                             </div>
                         </div>
                         <div class="dynamic_flex">
                             <div class="static_flex">
-                                <div><p class = product_p>Date acquired:</p></div>
-                                <div><p class = product_p>4/08/2025</p></div>
+                                <div><p class = product_p>Date bought:</p></div>
+                                <div><p class = product_p>4/05/2025</p></div>
                             </div>
                             <div class="static_flex">
-                                <div><p class = product_p>Age on arrival:</p></div>
-                                <div><p class = product_p>2 weeks</p></div>
-                            </div>
-                        </div>
-                        <div class="dynamic_flex">
-                            <div class="static_flex">
-                                <div><p class = product_p>Remaining:</p></div>
-                                <div><p class = product_p>300</p></div>
-                            </div>
-                            <div class="static_flex">
-                                <div><p class = product_p>Current Age:</p></div>
-                                <div><p class = product_p>4 months</p></div>
-                            </div>
-                        </div>
-                        <div class="dynamic_flex">
-                            <div class="static_flex">
-                                <div><p class = product_p>Health Status:</p></div>
-                                <div><p class = product_p>Healthy</p></div>
-                            </div>
-                            <div class="static_flex">
-                                <div><p class = product_p>Status:</p></div>
-                                <div><p class = product_p>Ready to lay eggs</p></div>
+                                <div><p class = product_p>Expiry Date:</p></div>
+                                <div><p class = product_p>15/08/2025</p></div>
                             </div>
                         </div>
                     </div>
                     <div class="record_card">
                         <div class="dynamic_flex">
                             <div class="static_flex">
-                                <div><p class = product_p>Batch No:</p></div>
-                                <div><p class = product_p>CL001</p></div>
+                                <div><p class = product_p>Medicine Name:</p></div>
+                                <div><p class = product_p>Amprolium</p></div>
                             </div>
+                            <div class="static_flex">
+                                <div><p class = product_p>Type:</p></div>
+                                <div><p class = product_p>Antibiotic</p></div>
+                            </div>
+                        </div>
+                        <div class="dynamic_flex">
                             <div class="static_flex">
                                 <div><p class = product_p>Breed:</p></div>
                                 <div><p class = product_p>Layers</p></div>
                             </div>
-                        </div>
-                        <div class="dynamic_flex">
-                            <div class="static_flex">
-                                <div><p class = product_p>Housing Unit:</p></div>
-                                <div><p class = product_p>A</p></div>
-                            </div>
                             <div class="static_flex">
                                 <div><p class = product_p>Quantity:</p></div>
-                                <div><p class = product_p>300</p></div>
+                                <div><p class = product_p>3 bottles</p></div>
                             </div>
                         </div>
                         <div class="dynamic_flex">
                             <div class="static_flex">
-                                <div><p class = product_p>Date acquired:</p></div>
-                                <div><p class = product_p>4/08/2025</p></div>
+                                <div><p class = product_p>Date bought:</p></div>
+                                <div><p class = product_p>4/05/2025</p></div>
                             </div>
                             <div class="static_flex">
-                                <div><p class = product_p>Age on arrival:</p></div>
-                                <div><p class = product_p>2 weeks</p></div>
-                            </div>
-                        </div>
-                        <div class="dynamic_flex">
-                            <div class="static_flex">
-                                <div><p class = product_p>Remaining:</p></div>
-                                <div><p class = product_p>300</p></div>
-                            </div>
-                            <div class="static_flex">
-                                <div><p class = product_p>Current Age:</p></div>
-                                <div><p class = product_p>4 months</p></div>
-                            </div>
-                        </div>
-                        <div class="dynamic_flex">
-                            <div class="static_flex">
-                                <div><p class = product_p>Health Status:</p></div>
-                                <div><p class = product_p>Healthy</p></div>
-                            </div>
-                            <div class="static_flex">
-                                <div><p class = product_p>Status:</p></div>
-                                <div><p class = product_p>Ready to lay eggs</p></div>
+                                <div><p class = product_p>Expiry Date:</p></div>
+                                <div><p class = product_p>15/08/2025</p></div>
                             </div>
                         </div>
                     </div>
@@ -767,14 +583,14 @@
                             <form class = "record_form">
                                 <div class="dynamic_flex inc_gap">
                                     <div class="static_flex">
-                                        <div><label for="batch_no">Batch No:</label></div>
-                                        <div><input type="text" name="batch_no" id=""></div>
+                                        <div><label for="medicine_name">Medicine name:</label></div>
+                                        <div><input type="text" name="medicine_name" id=""></div>
                                     </div>
                                     <div class="static_flex">
                                         <div><label for="breed">Breed:</label></div>
                                         <div>
                                             <select name="breed" id="">
-                                                <option value="kienyeji"></option>
+                                                <option value="kienyeji">All</option>
                                                 <option value="kienyeji">Kienyeji</option>
                                                 <option value="layers">Layers</option>
                                                 <option value="layers">Broilers</option>
@@ -784,51 +600,39 @@
                                 </div>
                                 <div class="dynamic_flex inc_gap">
                                     <div class="static_flex">
-                                        <div><label for="quantity">Quantity:</label></div>
-                                        <div><input type="number" name="quantity" id=""></div>
+                                        <div><label for="medicine_type">Type:</label></div>
+                                        <div>
+                                            <select name="medicine_type" id="">
+                                                <option value=""></option>
+                                                <option value="medicine_type">Antibiotic</option>
+                                                <option value="medicine_type">Dewormer</option>
+                                                <option value="medicine_type">Calcium Gain</option>
+                                            </select>
+                                        </div>
                                     </div>
                                     <div class="static_flex">
-                                        <div><label for="housing_unit">Housing Unit:</label></div>
+                                        <div><label for="age_at_arrival">Quantity:</label></div>
                                         <div>
-                                            <select name="housing_unit" id="">
-                                                <option value=""></option>
-                                                <option value="kienyeji">Hse A</option>
-                                                <option value="kienyeji">Hse B</option>
-                                                <option value="kienyeji">Hse C</option>
+                                            <input type="number" name="quantity_of_medicine" id="">
+                                            <select name="quantity_of_medicine" id="">
+                                                <option value="quantity_of_medicine">satchets</option>
+                                                <option value="quantity_of_medicine">bottles</option>
+                                                <option value="quantity_of_medicine">tablets</option>
                                             </select>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="dynamic_flex">
+                                <div class="dynamic_flex inc_gap">
                                     <div class="static_flex">
-                                        <div><label for="age_at_arrival">Age at arrival:</label></div>
+                                        <div><label for="date_bought">Date Acquired:</label></div>
                                         <div>
-                                            <input type="number" name="age_at_arrival" id="">
-                                            <select name="age_suffix" id="">
-                                                <option value="weeks">wk(s)</option>
-                                                <option value="Months">month(s)</option>
-                                            </select>
+                                            <input type="date" name="date_bought" id="">
                                         </div>
                                     </div>
                                     <div class="static_flex">
-                                        <div><label for="date_acquired">Date Acquired:</label></div>
+                                        <div><label for="expiry_date">Expiry Date:</label></div>
                                         <div>
-                                            <input type="date" name="date_acquired" id="">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="dynamic_flex">
-                                    <div class="static_flex">
-                                        <div><label for="health_status">Health:</label></div>
-                                        <div>
-                                            <select name="health_status" id="">
-                                                <option value=""></option>
-                                                <option value="kienyeji"></option>
-                                                <option value="good">Good</option>
-                                                <option value="poor">Poor</option>
-                                                <option value="excellent">Excellent</option>
-
-                                            </select>
+                                            <input type="date" name="expiry_date" id="">
                                         </div>
                                     </div>
                                 </div>
@@ -845,161 +649,83 @@
                 </div>
             </div>
             <div class="overal_records">
-                <h6 class = "h6_underline">Others</h6>
+                <h6 class = "h6_underline full_width">Others</h6>
                 <div class="record_cards dynamic_flex">
                     <div class="record_card">
                         <div class="dynamic_flex">
                             <div class="static_flex">
-                                <div><p class = product_p>Batch No:</p></div>
-                                <div><p class = product_p>CL001</p></div>
-                            </div>
-                            <div class="static_flex">
-                                <div><p class = product_p>Breed:</p></div>
-                                <div><p class = product_p>Layers</p></div>
-                            </div>
-                        </div>
-                        <div class="dynamic_flex">
-                            <div class="static_flex">
-                                <div><p class = product_p>Housing Unit:</p></div>
-                                <div><p class = product_p>A</p></div>
+                                <div><p class = product_p>Inventory Name:</p></div>
+                                <div><p class = product_p>chicken feeders</p></div>
                             </div>
                             <div class="static_flex">
                                 <div><p class = product_p>Quantity:</p></div>
-                                <div><p class = product_p>300</p></div>
+                                <div><p class = product_p>50</p></div>
                             </div>
                         </div>
                         <div class="dynamic_flex">
                             <div class="static_flex">
-                                <div><p class = product_p>Date acquired:</p></div>
-                                <div><p class = product_p>4/08/2025</p></div>
+                                <div><p class = product_p>Threshold alert needed:</p></div>
+                                <div><p class = product_p>NO</p></div>
                             </div>
                             <div class="static_flex">
-                                <div><p class = product_p>Age on arrival:</p></div>
-                                <div><p class = product_p>2 weeks</p></div>
-                            </div>
-                        </div>
-                        <div class="dynamic_flex">
-                            <div class="static_flex">
-                                <div><p class = product_p>Remaining:</p></div>
-                                <div><p class = product_p>300</p></div>
-                            </div>
-                            <div class="static_flex">
-                                <div><p class = product_p>Current Age:</p></div>
-                                <div><p class = product_p>4 months</p></div>
-                            </div>
-                        </div>
-                        <div class="dynamic_flex">
-                            <div class="static_flex">
-                                <div><p class = product_p>Health Status:</p></div>
-                                <div><p class = product_p>Healthy</p></div>
-                            </div>
-                            <div class="static_flex">
-                                <div><p class = product_p>Status:</p></div>
-                                <div><p class = product_p>Ready to lay eggs</p></div>
+                                <div><p class = product_p>Purpose:</p></div>
+                                <div><p class = product_p>Holding the feeds</p></div>
                             </div>
                         </div>
                     </div>
                     <div class="record_card">
                         <div class="dynamic_flex">
                             <div class="static_flex">
-                                <div><p class = product_p>Batch No:</p></div>
-                                <div><p class = product_p>CL001</p></div>
-                            </div>
-                            <div class="static_flex">
-                                <div><p class = product_p>Breed:</p></div>
-                                <div><p class = product_p>Layers</p></div>
-                            </div>
-                        </div>
-                        <div class="dynamic_flex">
-                            <div class="static_flex">
-                                <div><p class = product_p>Housing Unit:</p></div>
-                                <div><p class = product_p>A</p></div>
+                                <div><p class = product_p>Inventory Name:</p></div>
+                                <div><p class = product_p>Sawdust</p></div>
                             </div>
                             <div class="static_flex">
                                 <div><p class = product_p>Quantity:</p></div>
-                                <div><p class = product_p>300</p></div>
+                                <div><p class = product_p>50</p></div>
                             </div>
                         </div>
                         <div class="dynamic_flex">
                             <div class="static_flex">
-                                <div><p class = product_p>Date acquired:</p></div>
-                                <div><p class = product_p>4/08/2025</p></div>
+                                <div><p class = product_p>Threshold alert needed:</p></div>
+                                <div><p class = product_p>YES</p></div>
                             </div>
                             <div class="static_flex">
-                                <div><p class = product_p>Age on arrival:</p></div>
-                                <div><p class = product_p>2 weeks</p></div>
-                            </div>
-                        </div>
-                        <div class="dynamic_flex">
-                            <div class="static_flex">
-                                <div><p class = product_p>Remaining:</p></div>
-                                <div><p class = product_p>300</p></div>
-                            </div>
-                            <div class="static_flex">
-                                <div><p class = product_p>Current Age:</p></div>
-                                <div><p class = product_p>4 months</p></div>
+                                <div><p class = product_p>Alert threshold:</p></div>
+                                <div><p class = product_p>4 kgs</p></div>
                             </div>
                         </div>
                         <div class="dynamic_flex">
                             <div class="static_flex">
-                                <div><p class = product_p>Health Status:</p></div>
-                                <div><p class = product_p>Healthy</p></div>
-                            </div>
-                            <div class="static_flex">
-                                <div><p class = product_p>Status:</p></div>
-                                <div><p class = product_p>Ready to lay eggs</p></div>
+                                <div><p class = product_p>Purpose:</p></div>
+                                <div><p class = product_p>Holding the feeds</p></div>
                             </div>
                         </div>
                     </div>
                     <div class="record_card">
                         <div class="dynamic_flex">
                             <div class="static_flex">
-                                <div><p class = product_p>Batch No:</p></div>
-                                <div><p class = product_p>CL001</p></div>
-                            </div>
-                            <div class="static_flex">
-                                <div><p class = product_p>Breed:</p></div>
-                                <div><p class = product_p>Layers</p></div>
-                            </div>
-                        </div>
-                        <div class="dynamic_flex">
-                            <div class="static_flex">
-                                <div><p class = product_p>Housing Unit:</p></div>
-                                <div><p class = product_p>A</p></div>
+                                <div><p class = product_p>Inventory Name:</p></div>
+                                <div><p class = product_p>Sawdust</p></div>
                             </div>
                             <div class="static_flex">
                                 <div><p class = product_p>Quantity:</p></div>
-                                <div><p class = product_p>300</p></div>
+                                <div><p class = product_p>50</p></div>
                             </div>
                         </div>
                         <div class="dynamic_flex">
                             <div class="static_flex">
-                                <div><p class = product_p>Date acquired:</p></div>
-                                <div><p class = product_p>4/08/2025</p></div>
+                                <div><p class = product_p>Threshold alert needed:</p></div>
+                                <div><p class = product_p>YES</p></div>
                             </div>
                             <div class="static_flex">
-                                <div><p class = product_p>Age on arrival:</p></div>
-                                <div><p class = product_p>2 weeks</p></div>
-                            </div>
-                        </div>
-                        <div class="dynamic_flex">
-                            <div class="static_flex">
-                                <div><p class = product_p>Remaining:</p></div>
-                                <div><p class = product_p>300</p></div>
-                            </div>
-                            <div class="static_flex">
-                                <div><p class = product_p>Current Age:</p></div>
-                                <div><p class = product_p>4 months</p></div>
+                                <div><p class = product_p>Alert threshold:</p></div>
+                                <div><p class = product_p>4 kgs</p></div>
                             </div>
                         </div>
                         <div class="dynamic_flex">
                             <div class="static_flex">
-                                <div><p class = product_p>Health Status:</p></div>
-                                <div><p class = product_p>Healthy</p></div>
-                            </div>
-                            <div class="static_flex">
-                                <div><p class = product_p>Status:</p></div>
-                                <div><p class = product_p>Ready to lay eggs</p></div>
+                                <div><p class = product_p>Purpose:</p></div>
+                                <div><p class = product_p>Holding the feeds</p></div>
                             </div>
                         </div>
                     </div>
@@ -1011,69 +737,34 @@
                             <form class = "record_form">
                                 <div class="dynamic_flex inc_gap">
                                     <div class="static_flex">
-                                        <div><label for="batch_no">Batch No:</label></div>
-                                        <div><input type="text" name="batch_no" id=""></div>
+                                        <div><label for="inventory_name">Inventory Name:</label></div>
+                                        <div><input type="text" name="inventory_name" id=""></div>
                                     </div>
-                                    <div class="static_flex">
-                                        <div><label for="breed">Breed:</label></div>
-                                        <div>
-                                            <select name="breed" id="">
-                                                <option value="kienyeji"></option>
-                                                <option value="kienyeji">Kienyeji</option>
-                                                <option value="layers">Layers</option>
-                                                <option value="layers">Broilers</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="dynamic_flex inc_gap">
                                     <div class="static_flex">
                                         <div><label for="quantity">Quantity:</label></div>
                                         <div><input type="number" name="quantity" id=""></div>
                                     </div>
+                                </div>
+                                <div class="dynamic_flex inc_gap">
                                     <div class="static_flex">
-                                        <div><label for="housing_unit">Housing Unit:</label></div>
+                                        <div><label for="confirm_reminder">Threshold alert needed:</label></div>
                                         <div>
-                                            <select name="housing_unit" id="">
+                                            <select name="confirm_reminder" id="">
                                                 <option value=""></option>
-                                                <option value="kienyeji">Hse A</option>
-                                                <option value="kienyeji">Hse B</option>
-                                                <option value="kienyeji">Hse C</option>
+                                                <option value="confirm_reminder">YES</option>
+                                                <option value="confirm_reminder">NO</option>
                                             </select>
                                         </div>
+                                    </div>
+                                    <div class="static_flex">
+                                        <div><label for="alert_threshold">Alert threshold:</label></div>
+                                        <div><input type="number" name="alert_threshold" id=""></div>
                                     </div>
                                 </div>
-                                <div class="dynamic_flex">
+                                <div class="dynamic_flex inc_gap">
                                     <div class="static_flex">
-                                        <div><label for="age_at_arrival">Age at arrival:</label></div>
-                                        <div>
-                                            <input type="number" name="age_at_arrival" id="">
-                                            <select name="age_suffix" id="">
-                                                <option value="weeks">wk(s)</option>
-                                                <option value="Months">month(s)</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="static_flex">
-                                        <div><label for="date_acquired">Date Acquired:</label></div>
-                                        <div>
-                                            <input type="date" name="date_acquired" id="">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="dynamic_flex">
-                                    <div class="static_flex">
-                                        <div><label for="health_status">Health:</label></div>
-                                        <div>
-                                            <select name="health_status" id="">
-                                                <option value=""></option>
-                                                <option value="kienyeji"></option>
-                                                <option value="good">Good</option>
-                                                <option value="poor">Poor</option>
-                                                <option value="excellent">Excellent</option>
-
-                                            </select>
-                                        </div>
+                                        <div><label for="purpose">Purpose:</label></div>
+                                        <div><input type="text" name="purpose" id=""></div>
                                     </div>
                                 </div>
                                 <!-- submit button -->
@@ -1088,162 +779,111 @@
                     </div>
                 </div>
             </div>
-            <div class="supplier_det">
-                <h6 class = "h6_underline">Supplier Details</h6>
+            <div class="supplier_det overal_records ">
+                <h6 class = "h6_underline full_width">Supplier Details</h6>
                 <div class="record_cards dynamic_flex">
                     <div class="record_card">
                         <div class="dynamic_flex">
                             <div class="static_flex">
-                                <div><p class = product_p>Batch No:</p></div>
-                                <div><p class = product_p>CL001</p></div>
+                                <div><p class = product_p>Company Name:</p></div>
+                                <div><p class = product_p>Faida Feeds</p></div>
                             </div>
                             <div class="static_flex">
-                                <div><p class = product_p>Breed:</p></div>
-                                <div><p class = product_p>Layers</p></div>
-                            </div>
-                        </div>
-                        <div class="dynamic_flex">
-                            <div class="static_flex">
-                                <div><p class = product_p>Housing Unit:</p></div>
-                                <div><p class = product_p>A</p></div>
-                            </div>
-                            <div class="static_flex">
-                                <div><p class = product_p>Quantity:</p></div>
-                                <div><p class = product_p>300</p></div>
+                                <div><p class = product_p>Product Supplied:</p></div>
+                                <div><p class = product_p>Feeds</p></div>
                             </div>
                         </div>
-                        <div class="dynamic_flex">
+                        <div class="dynamic_flex inc_gap">
                             <div class="static_flex">
-                                <div><p class = product_p>Date acquired:</p></div>
-                                <div><p class = product_p>4/08/2025</p></div>
+                                <div><p class = product_p>Location:</p></div>
+                                <div><p class = product_p>Kitale</p></div>
                             </div>
                             <div class="static_flex">
-                                <div><p class = product_p>Age on arrival:</p></div>
-                                <div><p class = product_p>2 weeks</p></div>
-                            </div>
-                        </div>
-                        <div class="dynamic_flex">
-                            <div class="static_flex">
-                                <div><p class = product_p>Remaining:</p></div>
-                                <div><p class = product_p>300</p></div>
-                            </div>
-                            <div class="static_flex">
-                                <div><p class = product_p>Current Age:</p></div>
-                                <div><p class = product_p>4 months</p></div>
+                                <div><p class = product_p>Review:</p></div>
+                                <div><p class = product_p>Good</p></div>
                             </div>
                         </div>
-                        <div class="dynamic_flex">
-                            <div class="static_flex">
-                                <div><p class = product_p>Health Status:</p></div>
-                                <div><p class = product_p>Healthy</p></div>
-                            </div>
-                            <div class="static_flex">
-                                <div><p class = product_p>Status:</p></div>
-                                <div><p class = product_p>Ready to lay eggs</p></div>
+                        <div class="dynamic_flex ">
+                            <div class="static_flex space_arnd">
+                                <div class = "actual_details_style">
+                                    <i class="fa-solid fa-phone-flip"></i>
+                                    <p class="product_p">0787234037</p>
+                                </div>
+                                <div class = "actual_details_style">
+                                    <i class="fa-solid fa-envelope"></i>
+                                    <p class="product_p">faidafeeds@gmail.com</p>
+                                </div>
+                                
                             </div>
                         </div>
                     </div>
                     <div class="record_card">
                         <div class="dynamic_flex">
                             <div class="static_flex">
-                                <div><p class = product_p>Batch No:</p></div>
-                                <div><p class = product_p>CL001</p></div>
+                                <div><p class = product_p>Company Name:</p></div>
+                                <div><p class = product_p>Faulu Agrovet</p></div>
                             </div>
                             <div class="static_flex">
-                                <div><p class = product_p>Breed:</p></div>
-                                <div><p class = product_p>Layers</p></div>
-                            </div>
-                        </div>
-                        <div class="dynamic_flex">
-                            <div class="static_flex">
-                                <div><p class = product_p>Housing Unit:</p></div>
-                                <div><p class = product_p>A</p></div>
-                            </div>
-                            <div class="static_flex">
-                                <div><p class = product_p>Quantity:</p></div>
-                                <div><p class = product_p>300</p></div>
+                                <div><p class = product_p>Product Supplied:</p></div>
+                                <div><p class = product_p>Medicine</p></div>
                             </div>
                         </div>
-                        <div class="dynamic_flex">
+                        <div class="dynamic_flex inc_gap">
                             <div class="static_flex">
-                                <div><p class = product_p>Date acquired:</p></div>
-                                <div><p class = product_p>4/08/2025</p></div>
+                                <div><p class = product_p>Location:</p></div>
+                                <div><p class = product_p>Nairobi</p></div>
                             </div>
                             <div class="static_flex">
-                                <div><p class = product_p>Age on arrival:</p></div>
-                                <div><p class = product_p>2 weeks</p></div>
-                            </div>
-                        </div>
-                        <div class="dynamic_flex">
-                            <div class="static_flex">
-                                <div><p class = product_p>Remaining:</p></div>
-                                <div><p class = product_p>300</p></div>
-                            </div>
-                            <div class="static_flex">
-                                <div><p class = product_p>Current Age:</p></div>
-                                <div><p class = product_p>4 months</p></div>
+                                <div><p class = product_p>Review:</p></div>
+                                <div><p class = product_p>Average</p></div>
                             </div>
                         </div>
-                        <div class="dynamic_flex">
-                            <div class="static_flex">
-                                <div><p class = product_p>Health Status:</p></div>
-                                <div><p class = product_p>Healthy</p></div>
-                            </div>
-                            <div class="static_flex">
-                                <div><p class = product_p>Status:</p></div>
-                                <div><p class = product_p>Ready to lay eggs</p></div>
+                        <div class="dynamic_flex ">
+                            <div class="static_flex space_arnd">
+                                <div class = "actual_details_style">
+                                    <i class="fa-solid fa-phone-flip"></i>
+                                    <p class="product_p">0787234037</p>
+                                </div>
+                                <div class = "actual_details_style">
+                                    <i class="fa-solid fa-envelope"></i>
+                                    <p class="product_p">faidafeeds@gmail.com</p>
+                                </div>
+                                
                             </div>
                         </div>
                     </div>
                     <div class="record_card">
                         <div class="dynamic_flex">
                             <div class="static_flex">
-                                <div><p class = product_p>Batch No:</p></div>
-                                <div><p class = product_p>CL001</p></div>
+                                <div><p class = product_p>Company Name:</p></div>
+                                <div><p class = product_p>Faulu </p></div>
                             </div>
                             <div class="static_flex">
-                                <div><p class = product_p>Breed:</p></div>
-                                <div><p class = product_p>Layers</p></div>
-                            </div>
-                        </div>
-                        <div class="dynamic_flex">
-                            <div class="static_flex">
-                                <div><p class = product_p>Housing Unit:</p></div>
-                                <div><p class = product_p>A</p></div>
-                            </div>
-                            <div class="static_flex">
-                                <div><p class = product_p>Quantity:</p></div>
-                                <div><p class = product_p>300</p></div>
+                                <div><p class = product_p>Product Supplied:</p></div>
+                                <div><p class = product_p>Medicine</p></div>
                             </div>
                         </div>
-                        <div class="dynamic_flex">
+                        <div class="dynamic_flex inc_gap">
                             <div class="static_flex">
-                                <div><p class = product_p>Date acquired:</p></div>
-                                <div><p class = product_p>4/08/2025</p></div>
+                                <div><p class = product_p>Location:</p></div>
+                                <div><p class = product_p>Nairobi</p></div>
                             </div>
                             <div class="static_flex">
-                                <div><p class = product_p>Age on arrival:</p></div>
-                                <div><p class = product_p>2 weeks</p></div>
-                            </div>
-                        </div>
-                        <div class="dynamic_flex">
-                            <div class="static_flex">
-                                <div><p class = product_p>Remaining:</p></div>
-                                <div><p class = product_p>300</p></div>
-                            </div>
-                            <div class="static_flex">
-                                <div><p class = product_p>Current Age:</p></div>
-                                <div><p class = product_p>4 months</p></div>
+                                <div><p class = product_p>Review:</p></div>
+                                <div><p class = product_p>Poor</p></div>
                             </div>
                         </div>
-                        <div class="dynamic_flex">
-                            <div class="static_flex">
-                                <div><p class = product_p>Health Status:</p></div>
-                                <div><p class = product_p>Healthy</p></div>
-                            </div>
-                            <div class="static_flex">
-                                <div><p class = product_p>Status:</p></div>
-                                <div><p class = product_p>Ready to lay eggs</p></div>
+                        <div class="dynamic_flex ">
+                            <div class="static_flex space_arnd">
+                                <div class = "actual_details_style">
+                                    <i class="fa-solid fa-phone-flip"></i>
+                                    <p class="product_p">0787234037</p>
+                                </div>
+                                <div class = "actual_details_style">
+                                    <i class="fa-solid fa-envelope"></i>
+                                    <p class="product_p">faidafeeds@gmail.com</p>
+                                </div>
+                                
                             </div>
                         </div>
                     </div>
@@ -1255,67 +895,27 @@
                             <form class = "record_form">
                                 <div class="dynamic_flex inc_gap">
                                     <div class="static_flex">
-                                        <div><label for="batch_no">Batch No:</label></div>
-                                        <div><input type="text" name="batch_no" id=""></div>
+                                        <div><label for="company_name">Company Name:</label></div>
+                                        <div><input type="text" name="company_name" id=""></div>
                                     </div>
                                     <div class="static_flex">
-                                        <div><label for="breed">Breed:</label></div>
-                                        <div>
-                                            <select name="breed" id="">
-                                                <option value="kienyeji"></option>
-                                                <option value="kienyeji">Kienyeji</option>
-                                                <option value="layers">Layers</option>
-                                                <option value="layers">Broilers</option>
-                                            </select>
-                                        </div>
+                                        <div><label for="product_supplied">Product Supplied:</label></div>
+                                        <div><input type="text" name="product_supplied" id=""></div>
                                     </div>
                                 </div>
                                 <div class="dynamic_flex inc_gap">
                                     <div class="static_flex">
-                                        <div><label for="quantity">Quantity:</label></div>
-                                        <div><input type="number" name="quantity" id=""></div>
+                                        <div><label for="location">Location:</label></div>
+                                        <div><input type="text" name="location" id=""></div>
                                     </div>
                                     <div class="static_flex">
-                                        <div><label for="housing_unit">Housing Unit:</label></div>
+                                        <div><label for="review">Review:</label></div>
                                         <div>
-                                            <select name="housing_unit" id="">
+                                            <select name="review" id="">
                                                 <option value=""></option>
-                                                <option value="kienyeji">Hse A</option>
-                                                <option value="kienyeji">Hse B</option>
-                                                <option value="kienyeji">Hse C</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="dynamic_flex">
-                                    <div class="static_flex">
-                                        <div><label for="age_at_arrival">Age at arrival:</label></div>
-                                        <div>
-                                            <input type="number" name="age_at_arrival" id="">
-                                            <select name="age_suffix" id="">
-                                                <option value="weeks">wk(s)</option>
-                                                <option value="Months">month(s)</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="static_flex">
-                                        <div><label for="date_acquired">Date Acquired:</label></div>
-                                        <div>
-                                            <input type="date" name="date_acquired" id="">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="dynamic_flex">
-                                    <div class="static_flex">
-                                        <div><label for="health_status">Health:</label></div>
-                                        <div>
-                                            <select name="health_status" id="">
-                                                <option value=""></option>
-                                                <option value="kienyeji"></option>
-                                                <option value="good">Good</option>
-                                                <option value="poor">Poor</option>
-                                                <option value="excellent">Excellent</option>
-
+                                                <option value="review">Good</option>
+                                                <option value="review">Average</option>
+                                                <option value="review">Poor</option>
                                             </select>
                                         </div>
                                     </div>

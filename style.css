@@ -2,6 +2,7 @@
 :root{
     --card-color: #254441;
     --button-color: #bb9cd6;
+    --button-color-hover: #ede5f3;
 }
 html{
     font-size: 62.5%;
@@ -28,8 +29,6 @@ h4{
 h6{
     font-size: 20px;
     line-height: 40px;
-    /* width: 50%; */
-    /* margin: 0 auto; */
     text-align: center;
 }
 p{
@@ -57,10 +56,6 @@ img{
 }
 /* header styling */
 header{
-    /* display: flex;
-    align-items: center;
-    justify-content: space-around; */
-    /* justify-content: space-between; */
     padding: 3em;
 }
 .nav-list{
@@ -100,6 +95,7 @@ header{
 /* main styling */
 main{
     margin-top: 20px;
+    max-width: 100%;
 }
 /* landing page */
 /* hero section */
@@ -147,18 +143,16 @@ main{
 }
 .products_image{
     position: relative;
-    /* max-width: 25em; */
-    width: 40%;
+    width: 60%;
     max-width: 25em;
-    /* max-height: 30em; */
     /* bottom: 0; */
-    left: 24em;
+    left: 15em;
     /* top: 18em; */
     top: 8em;
 }
 .products_image img, .actual_images img,
 .image_logo, .banner_div img, .single_product_img_div img{
-    /* width: 100%; */
+
     max-inline-size: 100%;
     object-fit:cover;
     height: auto;
@@ -267,7 +261,7 @@ main{
     display: flex;
     align-items: center;
     flex-direction: column;
-    /* justify-content: space-between; */
+    justify-content: space-between;
     max-width: 80%;
     gap: 3em;
     margin: 0 auto;
@@ -349,13 +343,14 @@ main{
     margin-top: 1em;
     display: flex;
     align-items: center;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     gap:1.4em;
     width: 100%;
 }
 .single_product{
-    width: 12em;
+    width: 16em;
+    flex: none;
 }
 .single_product_price{
     display: flex;
@@ -389,9 +384,43 @@ main{
     align-items: center;
     flex-direction: column;
 }
+/* .list{
+    width: 100%;
+} */
+.total_list{
+    background-color: #bdb9b9;
+    padding: .2em .4em;
+    border-radius: .5em;
+    margin-bottom: 1em;
+}
 .list_child{
     display: flex;
     gap: 4em;
+}
+.space_btn{
+    gap: 15em;
+    width: 100%;
+}
+.quantity_control {
+  display: flex;
+  align-items: center;
+  gap: 0.5em;
+}
+
+.quantity_control button {
+  padding: 0.3em 0.6em;
+  font-size: 1.2rem;
+  cursor: pointer;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.quantity_value {
+  min-width: 2em;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.5rem;
 }
 
 /* inventory page */
@@ -414,9 +443,11 @@ main{
     box-shadow: inset -1px -1px 3px  gray;
 }
 .record_card{
-    border: 2px solid red;
+    background-color: var(--card-color);
+    color: rgb(172, 167, 167);
+    box-shadow: 2px -2px 5px #254441;    
     padding: 1em;
-    width: 100%;
+    /* width: 100%; */
     flex: 1;
 }
 .record_card div{
@@ -428,6 +459,10 @@ main{
     align-items: center;
     gap: 1em;
 }
+.space_arnd{
+    justify-content: space-around;
+    width: 100%;
+}
 .dynamic_flex{
     display: flex;
     align-items: center;
@@ -435,17 +470,25 @@ main{
     flex-direction: column;
     flex-wrap: wrap;
 }
-
+.full_width{
+    width: 100%;
+}
 .accordion_button{
     border: none;
+}
+.accordion_button p{
+    font-size: 17px;
 }
 .accordion_content{
     display: none;
 }
 .record_div_form{
-    width: 60%;
+    /* width: 60%; */
     margin: 0 auto;
     padding: 1em;
+    background-color: #d4d2d2;
+    border: 1px solid #ccc;
+    border-radius: .5em;
 }
 .record_form{
     font-size: 1.5rem;
@@ -460,19 +503,54 @@ margin-bottom: .5em;
     justify-content: center;
     width: 100%;
 }
+.centered_flex input{
+    background-color: var(--button-color);
+    padding:.3em;
+    transition: background-color 0.3s ease-in-out;
+
+}
+.centered_flex input:hover{
+    background-color: var(--button-color-hover);
+}
 /* health and vaccination page */
 table{
     min-width:100%;
     padding: .3em;
     font-size: 1.6rem;
-    /* border-collapse: collapse; */
+    border-collapse: collapse;
     /* cellspacing: 1em; */
 }
 th, td{
     padding:.5em;
+    text-align: center;
+}
+ tr:nth-child(odd) {
+    background-color: #b6f5f0;
+}
+ tr:nth-child(even) {
+    background-color: #a4c1df;
+}
+ th{
+    background-color: #5550502f;
+    font-weight: bold;
+}
+ tr {
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.2s ease;
+}
+ tr:hover {
+    background-color: #dfe6ea;
+    transform: scale(1.01);
 }
 .overal_records, .table_div{
     width: 100%;
+}
+.overal_records{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
 }
 /* finance page */
 .detailed_report{
@@ -566,21 +644,69 @@ th, td{
     color: #2e7d32;
 }
 /* footer styling */
+footer{
+    background-color: black;
+    color: white !important;
+    margin-top: 2em;
+}
+.white_clr{
+   color: white !important; 
+}
+.footer_t{
+    justify-content: space-around;
+    width: 100%;
+    align-items: flex-start;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+.small_fnt{
+    font-size: 15px;
+}
+.p_underline{
+    margin-bottom: 1em;
+    position: relative;
+}
+.p_underline::after{
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -8px;
+    transform: translateX(-50%);
+    width: 50%;
+    height: .1em;
+    background: whitesmoke;
 
-
+}
+.bod-top{
+    border-top: 1px solid whitesmoke;
+    align-items: center;
+}
+.more_gap{
+    gap:3em;
+}
 /* media query */
 @media (min-width: 300px){
-    .overal_products_area{
+    /* .overal_products_area{
         gap:3em;
         width: 97%;
+        flex-direction: row;
         margin:  1em auto;
-    }
+    } */
+    /* .single_product{
+        width: 12em;
+    } */
 
 }
 @media (min-width: 358px){
-    .single_product{
-        width: 16em;
+    .overal_products_area{
+        gap:3em;
+        width: 97%;
+        flex-direction: row;
+        margin:  1em auto;
     }
+    /* .single_product{
+        width: 16em;
+    } */
     .overal_banner_area{
         height: 40vh;
     }
@@ -680,6 +806,14 @@ th, td{
     }
     
 }
+@media (min-width: 1019px){
+    .contact_div_child{
+       flex-direction: row;
+       gap: 7em;
+       max-width: 100%;
+       margin: 0 4em 0 4em;
+    }
+}
 @media (min-width:1024px){
     .intro_div{
         flex-direction: row;
@@ -687,12 +821,6 @@ th, td{
     /* .actual_images{
         gap: 30em;
     } */
-    .contact_div_child{
-       flex-direction: row;
-       gap: 27em;
-       max-width: 100%;
-       margin: 0 4em 0 4em;
-    }
     .contact_div_form {
         min-width: 500px;
     }
@@ -717,6 +845,11 @@ th, td{
     }
 }
 
+@media(min-width:1035px){
+    .contact_div_child{
+       gap: 15em;
+    }
+}
 @media(min-width:1056px){
     .diff_width{
         max-width: 22em;

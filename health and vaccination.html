@@ -13,14 +13,16 @@
 </head>
 <body>
     <header>
-        <nav class = "nav">
+         <nav class = "nav">
             <ul class = "sidebar">
                 <li onclick = hideSidebar()><a><i class="fa-regular fa-circle-xmark"></i></i></a></li>
+                <li><a href="">Analytics</a></li>
                 <li><a href="">Inventory</a></li>
                 <li><a href="">Health</a></li>
                 <li><a href="">Finances</a></li>
                 <li><a href="">Orders & Sales</a></li>
                 <li><a href="">Egg Production</a></li>
+                <li><a href="">Sold Products</a></li>
             </ul>
             <ul class = "nav-list">
                 <li>
@@ -30,11 +32,13 @@
                         </a>
                     </div>
                 </li>
+                <li class = "hide_on_mobile"><a href="">Analytics</a></li>
                 <li class = "hide_on_mobile"><a href="">Inventory</a></li>
                 <li class = "hide_on_mobile"><a href="">Health</a></li>
                 <li class = "hide_on_mobile"><a href="">Finances</a></li>
                 <li class = "hide_on_mobile"><a href="">Orders & Sales</a></li>
                 <li class = "hide_on_mobile"><a href="">Egg Production</a></li>
+                <li class = "hide_on_mobile"><a href="">Sold Products</a></li>
                 <li onclick = showSidebar() class = "hide_on_desktop"><a><i class="fa-solid fa-bars"></i></a></li>
             </ul>
         </nav>
@@ -43,7 +47,7 @@
 
         <div class = "overal_section">
             <div class="overal_records">
-                <h6 class = "h6_underline">Scheduled Vaccinations</h6>
+                <h6 class = "h6_underline full_width">Scheduled Vaccinations</h6>
                 <div class="record_cards dynamic_flex">
                     <div class="record_card">
                         <div class="dynamic_flex">
@@ -52,48 +56,24 @@
                                 <div><p class = product_p>CL001</p></div>
                             </div>
                             <div class="static_flex">
-                                <div><p class = product_p>Breed:</p></div>
-                                <div><p class = product_p>Layers</p></div>
+                                <div><p class = product_p>Vaccine name:</p></div>
+                                <div><p class = product_p>Amprolium</p></div>
                             </div>
                         </div>
                         <div class="dynamic_flex">
                             <div class="static_flex">
-                                <div><p class = product_p>Housing Unit:</p></div>
-                                <div><p class = product_p>A</p></div>
+                                <div><p class = product_p>Scheduled date:</p></div>
+                                <div><p class = product_p>12/8/2025</p></div>
                             </div>
                             <div class="static_flex">
-                                <div><p class = product_p>Quantity:</p></div>
-                                <div><p class = product_p>300</p></div>
-                            </div>
-                        </div>
-                        <div class="dynamic_flex">
-                            <div class="static_flex">
-                                <div><p class = product_p>Date acquired:</p></div>
-                                <div><p class = product_p>4/08/2025</p></div>
-                            </div>
-                            <div class="static_flex">
-                                <div><p class = product_p>Age on arrival:</p></div>
-                                <div><p class = product_p>2 weeks</p></div>
+                                <div><p class = product_p>Reminder:</p></div>
+                                <div><p class = product_p>10/8/2025</p></div>
                             </div>
                         </div>
                         <div class="dynamic_flex">
                             <div class="static_flex">
-                                <div><p class = product_p>Remaining:</p></div>
-                                <div><p class = product_p>300</p></div>
-                            </div>
-                            <div class="static_flex">
-                                <div><p class = product_p>Current Age:</p></div>
-                                <div><p class = product_p>4 months</p></div>
-                            </div>
-                        </div>
-                        <div class="dynamic_flex">
-                            <div class="static_flex">
-                                <div><p class = product_p>Health Status:</p></div>
-                                <div><p class = product_p>Healthy</p></div>
-                            </div>
-                            <div class="static_flex">
-                                <div><p class = product_p>Status:</p></div>
-                                <div><p class = product_p>Ready to lay eggs</p></div>
+                                <div><p class = product_p>Instructions:</p></div>
+                                <div><p class = product_p> Put two spoon of the powdered vaccine in 1 litre of water</p></div>
                             </div>
                         </div>
                     </div>
@@ -104,48 +84,24 @@
                                 <div><p class = product_p>CL001</p></div>
                             </div>
                             <div class="static_flex">
-                                <div><p class = product_p>Breed:</p></div>
-                                <div><p class = product_p>Layers</p></div>
+                                <div><p class = product_p>Vaccine name:</p></div>
+                                <div><p class = product_p>Amprolium</p></div>
                             </div>
                         </div>
                         <div class="dynamic_flex">
                             <div class="static_flex">
-                                <div><p class = product_p>Housing Unit:</p></div>
-                                <div><p class = product_p>A</p></div>
+                                <div><p class = product_p>Scheduled date:</p></div>
+                                <div><p class = product_p>12/8/2025</p></div>
                             </div>
                             <div class="static_flex">
-                                <div><p class = product_p>Quantity:</p></div>
-                                <div><p class = product_p>300</p></div>
-                            </div>
-                        </div>
-                        <div class="dynamic_flex">
-                            <div class="static_flex">
-                                <div><p class = product_p>Date acquired:</p></div>
-                                <div><p class = product_p>4/08/2025</p></div>
-                            </div>
-                            <div class="static_flex">
-                                <div><p class = product_p>Age on arrival:</p></div>
-                                <div><p class = product_p>2 weeks</p></div>
+                                <div><p class = product_p>Reminder:</p></div>
+                                <div><p class = product_p>10/8/2025</p></div>
                             </div>
                         </div>
                         <div class="dynamic_flex">
                             <div class="static_flex">
-                                <div><p class = product_p>Remaining:</p></div>
-                                <div><p class = product_p>300</p></div>
-                            </div>
-                            <div class="static_flex">
-                                <div><p class = product_p>Current Age:</p></div>
-                                <div><p class = product_p>4 months</p></div>
-                            </div>
-                        </div>
-                        <div class="dynamic_flex">
-                            <div class="static_flex">
-                                <div><p class = product_p>Health Status:</p></div>
-                                <div><p class = product_p>Healthy</p></div>
-                            </div>
-                            <div class="static_flex">
-                                <div><p class = product_p>Status:</p></div>
-                                <div><p class = product_p>Ready to lay eggs</p></div>
+                                <div><p class = product_p>Instructions:</p></div>
+                                <div><p class = product_p> Put two spoon of the powdered vaccine in 1 litre of water</p></div>
                             </div>
                         </div>
                     </div>
@@ -156,100 +112,24 @@
                                 <div><p class = product_p>CL001</p></div>
                             </div>
                             <div class="static_flex">
-                                <div><p class = product_p>Breed:</p></div>
-                                <div><p class = product_p>Layers</p></div>
+                                <div><p class = product_p>Vaccine name:</p></div>
+                                <div><p class = product_p>Amprolium</p></div>
                             </div>
                         </div>
                         <div class="dynamic_flex">
                             <div class="static_flex">
-                                <div><p class = product_p>Housing Unit:</p></div>
-                                <div><p class = product_p>A</p></div>
+                                <div><p class = product_p>Scheduled date:</p></div>
+                                <div><p class = product_p>12/8/2025</p></div>
                             </div>
                             <div class="static_flex">
-                                <div><p class = product_p>Quantity:</p></div>
-                                <div><p class = product_p>300</p></div>
-                            </div>
-                        </div>
-                        <div class="dynamic_flex">
-                            <div class="static_flex">
-                                <div><p class = product_p>Date acquired:</p></div>
-                                <div><p class = product_p>4/08/2025</p></div>
-                            </div>
-                            <div class="static_flex">
-                                <div><p class = product_p>Age on arrival:</p></div>
-                                <div><p class = product_p>2 weeks</p></div>
+                                <div><p class = product_p>Reminder:</p></div>
+                                <div><p class = product_p>10/8/2025</p></div>
                             </div>
                         </div>
                         <div class="dynamic_flex">
                             <div class="static_flex">
-                                <div><p class = product_p>Remaining:</p></div>
-                                <div><p class = product_p>300</p></div>
-                            </div>
-                            <div class="static_flex">
-                                <div><p class = product_p>Current Age:</p></div>
-                                <div><p class = product_p>4 months</p></div>
-                            </div>
-                        </div>
-                        <div class="dynamic_flex">
-                            <div class="static_flex">
-                                <div><p class = product_p>Health Status:</p></div>
-                                <div><p class = product_p>Healthy</p></div>
-                            </div>
-                            <div class="static_flex">
-                                <div><p class = product_p>Status:</p></div>
-                                <div><p class = product_p>Ready to lay eggs</p></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="record_card">
-                        <div class="dynamic_flex">
-                            <div class="static_flex">
-                                <div><p class = product_p>Batch No:</p></div>
-                                <div><p class = product_p>CL001</p></div>
-                            </div>
-                            <div class="static_flex">
-                                <div><p class = product_p>Breed:</p></div>
-                                <div><p class = product_p>Layers</p></div>
-                            </div>
-                        </div>
-                        <div class="dynamic_flex">
-                            <div class="static_flex">
-                                <div><p class = product_p>Housing Unit:</p></div>
-                                <div><p class = product_p>A</p></div>
-                            </div>
-                            <div class="static_flex">
-                                <div><p class = product_p>Quantity:</p></div>
-                                <div><p class = product_p>300</p></div>
-                            </div>
-                        </div>
-                        <div class="dynamic_flex">
-                            <div class="static_flex">
-                                <div><p class = product_p>Date acquired:</p></div>
-                                <div><p class = product_p>4/08/2025</p></div>
-                            </div>
-                            <div class="static_flex">
-                                <div><p class = product_p>Age on arrival:</p></div>
-                                <div><p class = product_p>2 weeks</p></div>
-                            </div>
-                        </div>
-                        <div class="dynamic_flex">
-                            <div class="static_flex">
-                                <div><p class = product_p>Remaining:</p></div>
-                                <div><p class = product_p>300</p></div>
-                            </div>
-                            <div class="static_flex">
-                                <div><p class = product_p>Current Age:</p></div>
-                                <div><p class = product_p>4 months</p></div>
-                            </div>
-                        </div>
-                        <div class="dynamic_flex">
-                            <div class="static_flex">
-                                <div><p class = product_p>Health Status:</p></div>
-                                <div><p class = product_p>Healthy</p></div>
-                            </div>
-                            <div class="static_flex">
-                                <div><p class = product_p>Status:</p></div>
-                                <div><p class = product_p>Ready to lay eggs</p></div>
+                                <div><p class = product_p>Instructions:</p></div>
+                                <div><p class = product_p> Put two spoon of the powdered vaccine in 1 litre of water</p></div>
                             </div>
                         </div>
                     </div>
@@ -261,69 +141,39 @@
                             <form class = "record_form">
                                 <div class="dynamic_flex inc_gap">
                                     <div class="static_flex">
-                                        <div><label for="batch_no">Batch No:</label></div>
-                                        <div><input type="text" name="batch_no" id=""></div>
+                                        <div><label for="vaccine_name">Vaccine name:</label></div>
+                                        <div><input type="text" name="vaccine_name" id=""></div>
                                     </div>
                                     <div class="static_flex">
-                                        <div><label for="breed">Breed:</label></div>
+                                        <div><label for="batch_no">Batch no:</label></div>
                                         <div>
-                                            <select name="breed" id="">
-                                                <option value="kienyeji"></option>
-                                                <option value="kienyeji">Kienyeji</option>
-                                                <option value="layers">Layers</option>
-                                                <option value="layers">Broilers</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="dynamic_flex inc_gap">
-                                    <div class="static_flex">
-                                        <div><label for="quantity">Quantity:</label></div>
-                                        <div><input type="number" name="quantity" id=""></div>
-                                    </div>
-                                    <div class="static_flex">
-                                        <div><label for="housing_unit">Housing Unit:</label></div>
-                                        <div>
-                                            <select name="housing_unit" id="">
-                                                <option value=""></option>
-                                                <option value="kienyeji">Hse A</option>
-                                                <option value="kienyeji">Hse B</option>
-                                                <option value="kienyeji">Hse C</option>
+                                            <select name="batch_no" id="">
+                                                <option value="batch_no"></option>
+                                                <option value="batch_no">CL093</option>
+                                                <option value="batch_no">CL004</option>
+                                                <option value="batch_no">CL027</option>
                                             </select>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="dynamic_flex">
                                     <div class="static_flex">
-                                        <div><label for="age_at_arrival">Age at arrival:</label></div>
+                                        <div><label for="sheduled_date">Sheduled Date:</label></div>
                                         <div>
-                                            <input type="number" name="age_at_arrival" id="">
-                                            <select name="age_suffix" id="">
-                                                <option value="weeks">wk(s)</option>
-                                                <option value="Months">month(s)</option>
-                                            </select>
+                                            <input type="date" name="sheduled_date" id="">
                                         </div>
                                     </div>
                                     <div class="static_flex">
-                                        <div><label for="date_acquired">Date Acquired:</label></div>
+                                        <div><label for="reminder_date">Reminder Date:</label></div>
                                         <div>
-                                            <input type="date" name="date_acquired" id="">
+                                            <input type="date" name="reminder_date" id="">
                                         </div>
                                     </div>
                                 </div>
                                 <div class="dynamic_flex">
                                     <div class="static_flex">
-                                        <div><label for="health_status">Health:</label></div>
-                                        <div>
-                                            <select name="health_status" id="">
-                                                <option value=""></option>
-                                                <option value="kienyeji"></option>
-                                                <option value="good">Good</option>
-                                                <option value="poor">Poor</option>
-                                                <option value="excellent">Excellent</option>
-
-                                            </select>
-                                        </div>
+                                        <div><label for="instructions">Instructions:</label></div>
+                                        <div><input type="text" name="instructions" id="" placeholder="limited to 20 words max"></div>
                                     </div>
                                 </div>
                                 <!-- submit button -->
@@ -339,36 +189,36 @@
                 </div>
                 <div class="table_div">
                     <h6 class = "h6_underline">Vaccination History</h6>
-                    <table>
+                    <table class = "styled_table">
                         <tr>
                             <th>Vaccine</th>
-                            <th>Chicken Batch</th>
-                            <th>Date administered</th>
+                            <th>Batch  No</th>
+                            <th>Date Administered</th>
                             <th>Status</th>
                         </tr>
                         <tr>
                             <td>Vaccine name</td>
                             <td>CL001</td>
                             <td>12/03/2025</td>
-                            <td>Done</td>
+                            <td>On-time</td>
                         </tr>
                         <tr>
                             <td>Vaccine name</td>
                             <td>CL001</td>
                             <td>12/03/2025</td>
-                            <td>Done</td>
+                            <td>Late</td>
                         </tr>
                         <tr>
                             <td>Vaccine name</td>
                             <td>CL001</td>
                             <td>12/03/2025</td>
-                            <td>Done</td>
+                            <td>Missed</td>
                         </tr>
                         <tr>
                             <td>Vaccine name</td>
                             <td>CL001</td>
                             <td>12/03/2025</td>
-                            <td>Done</td>
+                            <td>On-time</td>
                         </tr>
                         
                     </table>

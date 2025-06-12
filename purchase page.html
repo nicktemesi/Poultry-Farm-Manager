@@ -59,25 +59,78 @@
                 <div class="list">
                     <div class="list_child">
                         <div><p>Eggs</p></div>
-                        <div><p>- 2  + </p></div>
+                        <div  class="quantity_control">
+                            <!-- Subtract button -->
+                            <button class="decrease">-</button>
+                            <!-- Quantity value (dynamic) -->
+                            <span class="quantity_value">1</span>
+                            <!-- Add button -->
+                            <button class="increase">+</button>   
+                        </div>
                         <div><p>900</p> </div>
                     </div>
+                </div>
+                <div class="list">
                     <div class="list_child">
                         <div><p>Eggs</p></div>
-                        <div><p>- 2  + </p></div>
+                        <div  class="quantity_control">
+                            <!-- Subtract button -->
+                            <button class="decrease">-</button>
+                            <!-- Quantity value (dynamic) -->
+                            <span class="quantity_value">1</span>
+                            <!-- Add button -->
+                            <button class="increase">+</button>   
+                        </div>
                         <div><p>900</p> </div>
                     </div>
+                </div>
+                <div class="list">
+                    <div class="list_child">
+                        <div><p>Manure</p></div>
+                        <div  class="quantity_control">
+                            <!-- Subtract button -->
+                            <button class="decrease">-</button>
+                            <!-- Quantity value (dynamic) -->
+                            <span class="quantity_value">1</span>
+                            <!-- Add button -->
+                            <button class="increase">+</button>   
+                        </div>
+                        <div><p>900</p> </div>
+                    </div>
+                </div>
+                <div class="list">
                     <div class="list_child">
                         <div><p>Eggs</p></div>
-                        <div><p>- 2  + </p></div>
+                        <div  class="quantity_control">
+                            <!-- Subtract button -->
+                            <button class="decrease">-</button>
+                            <!-- Quantity value (dynamic) -->
+                            <span class="quantity_value">1</span>
+                            <!-- Add button -->
+                            <button class="increase">+</button>   
+                        </div>
                         <div><p>900</p> </div>
                     </div>
+                </div>
+                <div class="list">
                     <div class="list_child">
-                        <div><p>Eggs</p></div>
-                        <div><p>- 2  + </p></div>
+                        <div><p>Chicken</p></div>
+                        <div  class="quantity_control">
+                            <!-- Subtract button -->
+                            <button class="decrease">-</button>
+                            <!-- Quantity value (dynamic) -->
+                            <span class="quantity_value">1</span>
+                            <!-- Add button -->
+                            <button class="increase">+</button>   
+                        </div>
                         <div><p>900</p> </div>
                     </div>
-                    
+                </div>
+                <div class=" list total_list">
+                    <div class="list_child space_btn">
+                        <div><p>Total</p></div>
+                        <div><p>12580</p></div>
+                    </div>
                 </div>
                 <a href="" class = "a_view_products">Check Out</a>
             </div>  
@@ -93,6 +146,36 @@
             const sidebar = document.querySelector(".sidebar")
             sidebar.style.display = "none" 
         }
+
+        // Quantity Adjustment Logic Starts Here
+
+
+        // Grab all increase and decrease buttons on the page
+        const increaseBtns = document.querySelectorAll(".increase");
+        const decreaseBtns = document.querySelectorAll(".decrease");
+
+        // Loop through each increase button and attach event listener
+        increaseBtns.forEach((btn, index) => {
+            btn.addEventListener("click", () => {
+            // Get the corresponding quantity span
+            const quantitySpan = document.querySelectorAll(".quantity_value")[index];
+            let currentQty = parseInt(quantitySpan.textContent);
+            quantitySpan.textContent = currentQty + 1; // Increase quantity
+            });
+        });
+
+        // Loop through each decrease button and attach event listener
+        decreaseBtns.forEach((btn, index) => {
+            btn.addEventListener("click", () => {
+            const quantitySpan = document.querySelectorAll(".quantity_value")[index];
+            let currentQty = parseInt(quantitySpan.textContent);
+
+            // Ensure the quantity never goes below 1
+            if (currentQty > 1) {
+                quantitySpan.textContent = currentQty - 1;
+            }
+            });
+        });
     </script>
 </body>
 </html>
