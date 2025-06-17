@@ -15,6 +15,8 @@ html{
 body{
     height: 100vh;
     background-color: #E5F4E3;
+}
+.wrapper{
     width:95%;
     margin: 0 auto;
 }
@@ -649,6 +651,11 @@ footer{
     color: white !important;
     margin-top: 2em;
 }
+.footer_container{
+    width:95%;
+    height: 100%;
+    margin: 0 auto;
+}
 .white_clr{
    color: white !important; 
 }
@@ -683,6 +690,63 @@ footer{
 }
 .more_gap{
     gap:3em;
+}
+
+/* Login and sign up */
+.sign_up_main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.sign_up_form{
+    width: 25rem;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
+.btn_bg{
+    background-color: var(--button-color);
+    transition: background-color 0.4s ease-in-out;
+}
+.btn_bg:hover{
+    background-color: var(--button-color-hover);
+}
+.sign_inputs{
+    display: block;
+    margin: 5px 0 5px 0;
+    min-width: 100%;
+    border-radius: 5px;
+    padding: 5px;
+}
+.underline{
+    text-decoration: underline;
+}
+.sign_up_form_div{
+    padding-bottom: 2em;
+}
+.center_a{
+    display: block;
+    text-align:center;
+}
+
+/* analytics */
+.graph{
+    background-color: #e8faf7;
+    padding: 1em;
+    border-radius: .5em;
+}
+.ctr_grph{
+    justify-content: center;
+}
+.overview_card{
+    padding:.5em;
+    background-color: #c2cfcf;
+    border-radius: .5em;
+    box-shadow: 3px 3px 2px #5b5e5e, inset 2px 2px 1px #5b5e5e;
+}
+.space-below{
+    margin-bottom: 2em;
 }
 /* media query */
 @media (min-width: 300px){
@@ -726,6 +790,9 @@ footer{
     }
     .sidebar{
         width: 50%;
+    }
+    .sign_up_form{
+    width: 35rem;
     }
 }
 @media (min-width:500px){
